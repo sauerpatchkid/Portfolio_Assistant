@@ -24,8 +24,10 @@ mkdir -p "$LMCACHE_DISK_DIR"
 
 # --chunk-size 256   KV cache is stored in 256-token chunks (a multiple of vLLM's 16-token blocks)
 # --l2-adapter fs    plain files on the local filesystem
+# --http-port        LMCache's status endpoint defaults to 8080, which Colab already uses
 lmcache server \
     --host localhost --port "$LMCACHE_PORT" \
+    --http-port "${LMCACHE_HTTP_PORT:-8090}" \
     --l1-size-gb "$LMCACHE_L1_GB" \
     --eviction-policy LRU \
     --chunk-size 256 \

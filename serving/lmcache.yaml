@@ -1,0 +1,7 @@
+# LMCache settings for the in-process fallback (serving/vllm_lmcache_inprocess.sh).
+# KV cache is stored in 256-token chunks, in CPU RAM first and on local disk second.
+chunk_size: 256
+local_cpu: true
+max_local_cpu_size: 2.0          # GB of CPU RAM (free Colab has ~12 GB in total)
+local_disk: "file:///content/lmcache_disk/"
+max_local_disk_size: 20.0        # GB of disk

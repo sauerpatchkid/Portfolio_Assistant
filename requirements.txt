@@ -1,0 +1,9 @@
+# Agent, eval and benchmark side. The model servers (vLLM, LMCache, SGLang)
+# are installed separately in their own virtualenvs by the notebooks.
+openai
+sqlalchemy
+pandas
+yfinance
+ddgs
+matplotlib
+pytest

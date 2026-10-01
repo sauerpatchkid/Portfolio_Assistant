@@ -19,7 +19,7 @@ import eval.offline as offline   # must come before the agent imports
 from agent.agent import run_agent
 from agent.backends import OpenAIBackend
 from agent.db import reset_database
-from agent.prompts import get_prompt_config
+from agent.prompts import get_agent_config
 from bench.common import time_first_token
 from eval.score import score_question
 
@@ -29,7 +29,8 @@ NO_THINKING = {"chat_template_kwargs": {"enable_thinking": False}}
 async def check(base_url, model):
     client = AsyncOpenAI(base_url=base_url, api_key="EMPTY", timeout=600)
     backend = OpenAIBackend(base_url, model)
-    system_prompt, tools = get_prompt_config("v1")
+    config = get_agent_config("v1")
+    system_prompt, tools = config.system_prompt, config.tools
     questions = {q["id"]: q for q in offline.load_jsonl(offline.QUESTIONS_PATH)}
     report = {"model": model, "base_url": base_url, "checks": {}}
 

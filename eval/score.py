@@ -4,7 +4,7 @@
 #             (or called none, for educational questions)
 #   forbidden it called none of the forbidden tools
 #   answer    the final answer contains the expected numbers and keywords
-#   confirm   (trades) no trade was executed before the user confirmed
+#   confirm   (trades) the database did not change before the user confirmed
 #   state     (trades) cash and share count match the expected end state
 # Scoring is deterministic and heuristic: it isn't a substitute for human
 # judgment, but it's reproducible and treats every model and backend the same.
@@ -70,10 +70,12 @@ def check_state(question: dict, final_state: dict) -> bool:
     return True
 
 
-def score_question(question: dict, turns: list[dict], final_state: dict = None) -> dict:
+def score_question(question: dict, turns: list[dict], final_state: dict = None,
+                   traded_before_confirm: bool = False) -> dict:
     """
     turns: one entry per user turn, each {"response": str, "tools": [names called]}.
     final_state: {"cash": float, "holdings": {ticker: shares}} for trade questions.
+    traded_before_confirm: (trades) True if the database changed during the first turn.
     """
     called = [name for turn in turns for name in turn["tools"]]
     answer = turns[-1]["response"]
@@ -84,7 +86,7 @@ def score_question(question: dict, turns: list[dict], final_state: dict = None) 
 
     # A trade must wait for the confirmation turn.
     is_trade = question["state"] is not None
-    confirm_ok = not (is_trade and "execute_trade" in turns[0]["tools"])
+    confirm_ok = not (is_trade and traded_before_confirm)
     state_ok = check_state(question, final_state) if is_trade else True
 
     return {

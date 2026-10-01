@@ -14,7 +14,7 @@ import json
 import eval.offline as offline   # must come before the agent imports
 
 from agent.db import reset_database
-from agent.prompts import get_prompt_config
+from agent.prompts import get_agent_config
 from agent.tools import execute_tool_call
 
 
@@ -61,7 +61,7 @@ def build_conversation(question: dict, system_prompt: str) -> dict:
 
 if __name__ == "__main__":
     questions = offline.load_jsonl(offline.QUESTIONS_PATH)
-    system_prompt, _ = get_prompt_config("v1")
+    system_prompt = get_agent_config("v1").system_prompt
 
     conversations = []
     for question in questions:

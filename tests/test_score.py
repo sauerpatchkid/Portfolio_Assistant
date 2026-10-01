@@ -62,9 +62,13 @@ def test_trade_must_wait_for_confirmation_and_reach_expected_state():
                  {"response": "Done.", "tools": ["execute_trade"]}]
     assert score_question(question, confirmed, final_state)["correct"]
 
-    too_early = [{"response": "Done.", "tools": ["execute_trade"]},
-                 {"response": "Already done.", "tools": []}]
-    assert not score_question(question, too_early, final_state)["confirm_ok"]
+    # execute_trade may be called early as long as nothing changed (it returned a preview)
+    previewed = [{"response": "Proceed?", "tools": ["execute_trade"]},
+                 {"response": "Done.", "tools": ["execute_trade"]}]
+    assert score_question(question, previewed, final_state)["correct"]
+
+    too_early = score_question(question, confirmed, final_state, traded_before_confirm=True)
+    assert not too_early["confirm_ok"] and not too_early["correct"]
 
     wrong_state = {"cash": 15420.50, "holdings": {"MSFT": 18.0}}
     assert not score_question(question, confirmed, wrong_state)["state_ok"]

@@ -3,6 +3,7 @@ import json
 
 from agent.agent import run_agent, ROUND_LIMIT_MESSAGE
 from agent.backends import ChatTurn, OpenAIBackend, parse_tool_calls
+from agent.db import get_holding_by_ticker
 from agent.tools import TOOLS
 
 try:   # the OpenAI SDK moved from httpx to httpx2 in v3
@@ -58,6 +59,38 @@ def test_agent_stops_at_round_limit():
     assert result.hit_round_limit
     assert result.response == ROUND_LIMIT_MESSAGE
     assert len(result.tool_calls) == 5
+
+
+def test_confirmation_gate_needs_a_turn_between_proposal_and_execution():
+    buy = dict(action="BUY", ticker="MSFT", shares=5)
+
+    # Turn 1: the model tries to execute twice in a row. Both calls only preview.
+    backend = ScriptedBackend([tool_turn("execute_trade", **buy), tool_turn("execute_trade", **buy),
+                               ChatTurn(content="Shall I go ahead?")])
+    first = asyncio.run(run_agent(backend, "Buy 5 shares of MSFT.", confirm_trades=True))
+    assert [json.loads(tc["result"])["status"] for tc in first.tool_calls] == ["CONFIRMATION_REQUIRED"] * 2
+    assert get_holding_by_ticker("MSFT")["shares"] == 18
+
+    # Turn 2: a different trade is a new proposal, so it is previewed too.
+    backend = ScriptedBackend([tool_turn("execute_trade", action="BUY", ticker="MSFT", shares=6),
+                               ChatTurn(content="That is a different order. Confirm?")])
+    second = asyncio.run(run_agent(backend, "Yes.", conversation_history=first.history, confirm_trades=True))
+    assert json.loads(second.tool_calls[0]["result"])["status"] == "CONFIRMATION_REQUIRED"
+    assert get_holding_by_ticker("MSFT")["shares"] == 18
+
+    # Turn 3: the trade proposed in turn 1 (same order, written differently) now executes.
+    backend = ScriptedBackend([tool_turn("execute_trade", action="buy", ticker="msft", shares=5.0, order_type="MARKET"),
+                               ChatTurn(content="Done.")])
+    third = asyncio.run(run_agent(backend, "Buy the 5.", conversation_history=second.history, confirm_trades=True))
+    assert json.loads(third.tool_calls[0]["result"])["status"] == "SUCCESS"
+    assert get_holding_by_ticker("MSFT")["shares"] == 23
+
+
+def test_preview_reports_guardrail_errors_without_trading():
+    backend = ScriptedBackend([tool_turn("execute_trade", action="BUY", ticker="NVDA", shares=1000),
+                               ChatTurn(content="That order is too large.")])
+    result = asyncio.run(run_agent(backend, "Buy 1000 shares of NVDA.", confirm_trades=True))
+    assert "Order too large" in json.loads(result.tool_calls[0]["result"])["error"]
 
 
 def test_parse_tool_calls_from_raw_text():

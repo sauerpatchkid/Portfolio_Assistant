@@ -24,7 +24,7 @@ from openai import AsyncOpenAI
 
 import eval.offline as offline   # must come before the agent imports
 
-from agent.prompts import get_prompt_config
+from agent.prompts import get_agent_config
 from bench.common import time_first_token, median, percentile
 
 SUMMARY_PATH = offline.RESULTS_DIR / "ttft_summary.csv"
@@ -73,7 +73,7 @@ def main():
     conversations = offline.load_jsonl(offline.TRACE_PATH)
     if args.limit:
         conversations = conversations[:args.limit]
-    _, tools = get_prompt_config("v1")
+    tools = get_agent_config("v1").tools   # the trace is built with v1
 
     client = AsyncOpenAI(base_url=args.base_url, api_key="EMPTY", timeout=600)
     rows = asyncio.run(replay(client, args.model, conversations, tools))

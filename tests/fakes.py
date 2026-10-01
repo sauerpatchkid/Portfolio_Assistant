@@ -9,15 +9,20 @@ class OracleBackend:
     the eval harness against it checks the harness itself, with no GPU.
     """
 
-    def __init__(self, questions):
+    def __init__(self, questions, propose_trades=False):
         self.by_first_message = {q["turns"][0]: q for q in questions}
         self.calls = 0
+        # With the confirmation gate on, the right move in the first turn of a
+        # trade is to call execute_trade itself (it returns a preview).
+        self.propose_trades = propose_trades
 
     async def chat(self, messages, tools=None, max_tokens=512) -> ChatTurn:
         self.calls += 1
         user_messages = [m["content"] for m in messages if m["role"] == "user"]
         question = self.by_first_message[user_messages[0]]
         oracle_turn = question["oracle"][len(user_messages) - 1]
+        if self.propose_trades and question["state"] is not None and len(user_messages) == 1:
+            oracle_turn = {"calls": question["oracle"][1]["calls"], "reply": oracle_turn["reply"]}
 
         # Tool results since the last user message tell us how far along we are.
         last_user = max(i for i, m in enumerate(messages) if m["role"] == "user")

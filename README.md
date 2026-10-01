@@ -45,10 +45,12 @@ a JSON schema:
 tools. The tool results are appended to the conversation and the model is
 called again, for up to five rounds (`agent/agent.py`).
 
-**Trade guardrails.** The prompt tells the model to describe a trade and wait
-for confirmation before executing it. The code enforces the rest regardless of
-what the model does: at most 500 shares per order, no restricted tickers, no
-buying beyond the cash balance, no selling more than is held.
+**Trade guardrails.** The code enforces the rules regardless of what the model
+does: at most 500 shares per order, no restricted tickers, no buying beyond the
+cash balance, no selling more than is held. It also enforces confirmation: a
+trade only executes if the model proposed the same trade in an earlier turn, so
+the user always gets to reply first. The first call returns a preview with the
+estimated cost instead (`agent/agent.py`).
 
 **Two model sizes.** Qwen3-0.6B and Qwen3-8B run the same agent, so the effect
 of model size on tool use and answer quality can be compared directly. The 8B
@@ -70,6 +72,12 @@ A question is a **correct completion** only if the agent called the right tools,
 called no forbidden tool, gave an answer containing the expected numbers, and
 (for trades) waited for confirmation and left the database in the expected
 state. Scoring is deterministic; see `eval/score.py`.
+
+The agent has two versions (`agent/prompts.py`). **v1** is the original system
+prompt and tool descriptions. **v2** was written after reading the v1 failures:
+trades executed without confirmation, replies that announced a lookup and then
+stopped, tools that could not answer the question, and invented numbers. It
+rewrites the prompt and tool descriptions and adds the confirmation gate above.
 
 Three choices keep the suite repeatable:
 
@@ -123,14 +131,15 @@ GPU runtime, and choose Runtime > Run all. The first cell clones this repo.
 |---|---|
 | [`00_smoke_test`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/00_smoke_test.ipynb) | Checks that each model server starts and handles a tool call |
 | [`01_eval_vllm`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/01_eval_vllm.ipynb) | Eval suite on both models, and full-pass time at 1 to 32 concurrent requests |
-| [`02_kv_cache`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/02_kv_cache.ipynb) | Time-to-first-token with KV-cache reuse off, on, and extended to RAM and disk |
+| [`02_kv_cache`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/02_kv_cache.ipynb) | Time-to-first-token with KV-cache reuse off, on, and extended to RAM and disk; eviction test |
 | [`03_sglang`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/03_sglang.ipynb) | Same eval suite and trace on the alternative backend |
 | [`04_hf_baseline`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/04_hf_baseline.ipynb) | Same suite through sequential in-notebook generation |
+| [`05_agent_versions`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/05_agent_versions.ipynb) | Agent v1 vs v2 on both models |
 
 Against any running OpenAI-compatible server:
 
 ```bash
-python -m eval.run_eval --name my_run --model Qwen/Qwen3-8B-AWQ --base-url http://localhost:8000/v1 --concurrency 16
+python -m eval.run_eval --name my_run --model Qwen/Qwen3-8B-AWQ --base-url http://localhost:8000/v1 --prompt v2 --concurrency 16
 ```
 
 Tests, no GPU needed:

@@ -21,7 +21,7 @@ import eval.offline as offline   # must come before the agent imports
 from agent.agent import run_agent
 from agent.backends import OpenAIBackend, HFBackend
 from agent.db import reset_database, get_user_info, get_holdings
-from agent.prompts import get_prompt_config
+from agent.prompts import get_agent_config
 from agent.tools import execute_tool_call
 from eval.score import score_question
 
@@ -46,7 +46,7 @@ def execute_tool_read_only(name: str, arguments: dict) -> str:
     return execute_tool_call(name, arguments)
 
 
-async def run_question(backend, question, system_prompt, tools, max_tokens):
+async def run_question(backend, question, config, max_tokens):
     """Run every turn of one question and score it."""
     start = time.perf_counter()
     history = None
@@ -54,16 +54,22 @@ async def run_question(backend, question, system_prompt, tools, max_tokens):
     rounds = []
     error = None
     is_trade = question["state"] is not None
+    initial_state = read_state() if is_trade else None
+    traded_before_confirm = False
 
     try:
-        for user_message in question["turns"]:
+        for turn_index, user_message in enumerate(question["turns"]):
             result = await run_agent(
                 backend, user_message,
-                system_prompt=system_prompt, tools=tools,
+                system_prompt=config.system_prompt, tools=config.tools,
                 conversation_history=history, max_tokens=max_tokens,
                 execute_tool=execute_tool_call if is_trade else execute_tool_read_only,
+                confirm_trades=config.confirm_trades,
             )
             history = result.history
+            # A trade must wait for the user's confirmation in the second turn.
+            if is_trade and turn_index == 0:
+                traded_before_confirm = read_state() != initial_state
             turns.append({
                 "response": result.response,
                 "tools": [tc["name"] for tc in result.tool_calls],
@@ -76,7 +82,7 @@ async def run_question(backend, question, system_prompt, tools, max_tokens):
             turns.append({"response": "", "tools": [], "tool_calls": []})
 
     final_state = read_state() if is_trade else None
-    score = score_question(question, turns, final_state)
+    score = score_question(question, turns, final_state, traded_before_confirm)
 
     return {
         "id": question["id"],
@@ -91,7 +97,7 @@ async def run_question(backend, question, system_prompt, tools, max_tokens):
     }
 
 
-async def run_suite(backend, questions, system_prompt, tools, concurrency, max_tokens):
+async def run_suite(backend, questions, config, concurrency, max_tokens):
     read_only = [q for q in questions if q["state"] is None]
     trades = [q for q in questions if q["state"] is not None]
 
@@ -100,7 +106,7 @@ async def run_suite(backend, questions, system_prompt, tools, concurrency, max_t
 
     async def bounded(question):
         async with semaphore:
-            return await run_question(backend, question, system_prompt, tools, max_tokens)
+            return await run_question(backend, question, config, max_tokens)
 
     start = time.perf_counter()
     records = list(await asyncio.gather(*(bounded(q) for q in read_only)))
@@ -109,7 +115,7 @@ async def run_suite(backend, questions, system_prompt, tools, concurrency, max_t
     start = time.perf_counter()
     for question in trades:
         reset_database()
-        records.append(await run_question(backend, question, system_prompt, tools, max_tokens))
+        records.append(await run_question(backend, question, config, max_tokens))
     trade_wall = time.perf_counter() - start
     reset_database()
 
@@ -134,6 +140,8 @@ def summarize(records, args, read_only_wall, trade_wall) -> dict:
         "questions": total,
         "correct": correct,
         "accuracy_pct": round(100 * correct / total, 1) if total else 0.0,
+        "dev_correct": sum(r["correct"] for r in records if r["split"] == "dev"),
+        "test_correct": sum(r["correct"] for r in records if r["split"] == "test"),
         "multi_step_questions": len(multi),
         "multi_step_correct": sum(r["correct"] for r in multi),
         "errors": sum(1 for r in records if r["error"]),
@@ -172,7 +180,7 @@ def parse_args():
     parser.add_argument("--base-url", default="http://localhost:8000/v1")
     parser.add_argument("--model", required=True)
     parser.add_argument("--quantized", action="store_true", help="hf backend: load in 4-bit")
-    parser.add_argument("--prompt", default="v1", help="Prompt version from agent/prompts.py")
+    parser.add_argument("--prompt", default="v1", help="Agent version from agent/prompts.py")
     parser.add_argument("--split", choices=["all", "dev", "test"], default="all")
     parser.add_argument("--concurrency", type=int, default=1)
     parser.add_argument("--max-tokens", type=int, default=512)
@@ -189,7 +197,7 @@ def main():
     if args.limit:
         questions = questions[:args.limit]
 
-    system_prompt, tools = get_prompt_config(args.prompt)
+    config = get_agent_config(args.prompt)
 
     if args.backend == "hf":
         # In-process generation handles one request at a time.
@@ -202,7 +210,7 @@ def main():
           f"({args.backend}, prompt {args.prompt}, concurrency {args.concurrency})...")
 
     records, read_only_wall, trade_wall = asyncio.run(
-        run_suite(backend, questions, system_prompt, tools, args.concurrency, args.max_tokens)
+        run_suite(backend, questions, config, args.concurrency, args.max_tokens)
     )
 
     run_dir = offline.RESULTS_DIR / args.name

@@ -9,7 +9,7 @@ from agent.market import (
     get_historical_data,
 )
 from agent.analysis import get_portfolio_summary, get_sector_allocation, compare_stocks
-from agent.trade import execute_trade
+from agent.trade import execute_trade, preview_trade, trade_key
 from agent.web import web_search
 
 
@@ -168,15 +168,28 @@ TOOL_FUNCTIONS = {
 }
 
 
-def execute_tool_call(name: str, arguments: dict) -> str:
+# Tools that change something for real. When the agent's confirmation gate is on,
+# the first call returns this preview instead, and the tool only runs once the
+# same call is made again in a later turn (see agent/agent.py).
+PREVIEW_FUNCTIONS = {"execute_trade": preview_trade}
+CALL_KEYS = {"execute_trade": trade_key}
+
+
+def preview_tool_call(name: str, arguments: dict) -> str:
+    """Run a tool's preview (no side effects) and return a JSON string."""
+    return execute_tool_call(name, arguments, functions=PREVIEW_FUNCTIONS)
+
+
+def execute_tool_call(name: str, arguments: dict, functions: dict = None) -> str:
     """Execute one tool call and return a JSON string."""
     arguments = arguments or {}
+    functions = TOOL_FUNCTIONS if functions is None else functions
 
-    if name not in TOOL_FUNCTIONS:
+    if name not in functions:
         return json.dumps({"error": f"Unknown tool: {name}"})
 
     try:
-        result = TOOL_FUNCTIONS[name](**arguments)
+        result = functions[name](**arguments)
         return json.dumps(result, default=str)
     except TypeError as e:
         return json.dumps({

@@ -2,17 +2,20 @@
 # Shows what happens to a conversation's cached prefix after the server has been
 # busy with other work, which is the case an external KV cache (LMCache) is for.
 #
-#   python -m bench.eviction --name evict_vllm \
+#   python -m bench.eviction --name evict_prefix_cache \
 #       --base-url http://localhost:8000/v1 --model Qwen/Qwen3-8B-AWQ
 #
 # For each target conversation (the longest ones in the trace):
 #   cold     first time the server sees it: the whole prompt is computed
 #   warm     sent again right away: the prompt's KV cache is still in GPU memory
-#   revisit  sent again after many unrelated long prompts ("fillers") have
-#            pushed it out of GPU memory
+#   revisit  sent again after enough unrelated long prompts ("fillers") to push
+#            it out of GPU memory
+# After all targets, the first one is sent once more:
+#   late_revisit  by now it has also been pushed out of LMCache's RAM tier, so
+#                 only the disk tier can still have it
 #
-# Without LMCache, "revisit" should fall back toward "cold". With LMCache the
-# evicted KV cache is reloaded from CPU RAM or disk instead of being recomputed.
+# Without LMCache, "revisit" falls back to "cold". With LMCache the evicted KV
+# cache can be loaded back from CPU RAM or disk instead of being recomputed.
 #
 # Outputs:
 #   results/<name>/eviction.jsonl      one line per timed request
@@ -27,7 +30,7 @@ from openai import AsyncOpenAI
 
 import eval.offline as offline   # must come before the agent imports
 
-from agent.prompts import get_prompt_config
+from agent.prompts import get_agent_config
 from bench.common import time_first_token, median
 
 SUMMARY_PATH = offline.RESULTS_DIR / "eviction_summary.csv"
@@ -57,27 +60,36 @@ def make_filler(rng, words):
     return [{"role": "user", "content": f"Note {uuid.uuid4().hex}: {text}\nReply with OK."}]
 
 
-async def run(client, model, targets, tools, fillers, filler_words, seed):
+async def run(client, model, targets, tools, fillers, filler_words, settle_seconds, seed):
     rng = random.Random(seed)
     rows = []
     filler_tokens = 0
 
+    async def timed(target, phase):
+        timing = await time_first_token(client, model, target["messages"], tools)
+        rows.append({"target": target["id"], "phase": phase, **timing})
+
     await time_first_token(client, model, [{"role": "user", "content": "Hello"}])   # warm-up
 
     for target in targets:
-        for phase in ["cold", "warm"]:
-            timing = await time_first_token(client, model, target["messages"], tools)
-            rows.append({"target": target["id"], "phase": phase, **timing})
+        await timed(target, "cold")
+        await timed(target, "warm")
 
         for _ in range(fillers):
             timing = await time_first_token(client, model, make_filler(rng, filler_words))
             filler_tokens += timing["prompt_tokens"]
 
-        timing = await time_first_token(client, model, target["messages"], tools)
-        rows.append({"target": target["id"], "phase": "revisit", **timing})
+        # A user comes back after a pause, not in the same instant. The pause also
+        # lets a cache layer finish writing what it was given.
+        await asyncio.sleep(settle_seconds)
+        await timed(target, "revisit")
         print(f"  {target['id']}: " + "  ".join(
             f"{r['phase']}={r['ttft_s']}s" for r in rows if r["target"] == target["id"]
         ))
+
+    await asyncio.sleep(settle_seconds)
+    await timed(targets[0], "late_revisit")
+    print(f"  {targets[0]['id']}: late_revisit={rows[-1]['ttft_s']}s")
 
     return rows, filler_tokens
 
@@ -88,18 +100,19 @@ def main():
     parser.add_argument("--base-url", default="http://localhost:8000/v1")
     parser.add_argument("--model", required=True)
     parser.add_argument("--targets", type=int, default=3)
-    parser.add_argument("--fillers", type=int, default=24, help="Unrelated prompts sent between visits")
+    parser.add_argument("--fillers", type=int, default=6, help="Unrelated prompts sent between visits")
     parser.add_argument("--filler-words", type=int, default=2500, help="Length of each filler prompt")
+    parser.add_argument("--settle-seconds", type=float, default=20, help="Pause before each revisit")
     parser.add_argument("--seed", type=int, default=0)
     args = parser.parse_args()
 
     conversations = offline.load_jsonl(offline.TRACE_PATH)
-    _, tools = get_prompt_config("v1")
+    tools = get_agent_config("v1").tools   # the trace is built with v1
     targets = pick_targets(conversations, args.targets)
 
     client = AsyncOpenAI(base_url=args.base_url, api_key="EMPTY", timeout=600)
     rows, filler_tokens = asyncio.run(
-        run(client, args.model, targets, tools, args.fillers, args.filler_words, args.seed)
+        run(client, args.model, targets, tools, args.fillers, args.filler_words, args.settle_seconds, args.seed)
     )
 
     run_dir = offline.RESULTS_DIR / args.name
@@ -118,6 +131,7 @@ def main():
         "cold_median_s": phase_median("cold"),
         "warm_median_s": phase_median("warm"),
         "revisit_median_s": phase_median("revisit"),
+        "late_revisit_s": phase_median("late_revisit"),
     }
     offline.append_csv_row(SUMMARY_PATH, summary)
 

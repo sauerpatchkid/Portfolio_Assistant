@@ -6,7 +6,7 @@
 # vLLM on its own keeps reusable KV cache only in GPU memory, so it is lost when
 # the GPU needs the space. LMCache runs next to vLLM as a separate process and
 # keeps copies in two more tiers:
-#   L1  CPU RAM      (LMCACHE_L1_GB, small because free Colab has ~12 GB of RAM)
+#   L1  CPU RAM      (LMCACHE_L1_GB; 4 GB holds about 27,000 tokens of KV cache for the 8B model)
 #   L2  local disk   (LMCACHE_DISK_DIR)
 # When a prompt prefix is no longer in GPU memory, vLLM asks LMCache for it and
 # loads the KV cache back instead of recomputing it.
@@ -15,7 +15,7 @@ set -euo pipefail
 MODEL="${1:?usage: vllm_lmcache.sh <model> [port]}"
 PORT="${2:-8000}"
 LMCACHE_PORT="${LMCACHE_PORT:-5555}"
-LMCACHE_L1_GB="${LMCACHE_L1_GB:-2}"
+LMCACHE_L1_GB="${LMCACHE_L1_GB:-4}"
 LMCACHE_DISK_DIR="${LMCACHE_DISK_DIR:-/content/lmcache_disk}"
 
 if [ -n "${SERVING_VENV:-}" ]; then source "$SERVING_VENV/bin/activate"; fi

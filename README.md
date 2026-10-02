@@ -79,10 +79,15 @@ trades executed without confirmation, replies that announced a lookup and then
 stopped, tools that could not answer the question, and invented numbers. It
 rewrites the prompt and tool descriptions and adds the confirmation gate above.
 
+A separate **held-out set** of 40 questions (`eval/build_holdout.py`) was
+written after v2 was finished, and v2 has not been changed since. It asks for
+the same skills in different words, mostly about ten tickers that appear nowhere
+in the main suite, and adds question types the main suite has no template for.
+
 Three choices keep the suite repeatable:
 
 - **Recorded market data.** Live prices change every minute, so evals read a
-  snapshot of the tool outputs for 18 tickers (`data/market_snapshot.json`).
+  snapshot of the tool outputs for 28 tickers (`data/market_snapshot.json`).
 - **Computed answers.** `eval/build_questions.py` works out every expected
   number by calling the same tool functions the agent uses.
 - **Two halves.** Questions alternate between two halves inside every category,
@@ -210,7 +215,7 @@ vLLM scored 49 under the scorer used for those two runs.
 | Folder | Contents |
 |---|---|
 | `agent/` | Database, market data, tools, trade guardrails, agent loop, prompts, model backends |
-| `eval/` | Question builder, the 100 questions, scorer, runner |
+| `eval/` | Question builders, the 100 questions and the 40 held-out ones, scorer, runner |
 | `results/` | Raw records, summaries and figures from the runs below |
 | `bench/` | Fixed trace, time-to-first-token and KV-cache benchmarks |
 | `serving/` | Launch scripts for the model servers |
@@ -231,6 +236,7 @@ GPU runtime, and choose Runtime > Run all. The first cell clones this repo.
 | [`03_sglang`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/03_sglang.ipynb) | Same eval suite and trace on the alternative backend |
 | [`04_hf_baseline`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/04_hf_baseline.ipynb) | Same suite through sequential in-notebook generation |
 | [`05_agent_versions`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/05_agent_versions.ipynb) | Agent v1 vs v2 on both models |
+| [`06_holdout`](https://colab.research.google.com/github/sauerpatchkid/Portfolio_Assistant/blob/main/notebooks/06_holdout.ipynb) | Agent v1 vs v2 on the 40 held-out questions |
 
 Against any running OpenAI-compatible server:
 

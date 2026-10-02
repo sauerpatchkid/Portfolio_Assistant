@@ -217,6 +217,126 @@
    "year_high": 135.16,
    "year_low": 98.88,
    "market_cap": 830742561631.5483
+  },
+  "ORCL": {
+   "ticker": "ORCL",
+   "current_price": 138.07,
+   "previous_close": 137.03,
+   "change": 1.04,
+   "change_percent": 0.76,
+   "day_high": 140.25,
+   "day_low": 135.33,
+   "year_high": 322.54,
+   "year_low": 114.5,
+   "market_cap": 418559385845.80756
+  },
+  "PEP": {
+   "ticker": "PEP",
+   "current_price": 125.6,
+   "previous_close": 126.99,
+   "change": -1.39,
+   "change_percent": -1.09,
+   "day_high": 127.31,
+   "day_low": 125.53,
+   "year_high": 171.48,
+   "year_low": 126.42,
+   "market_cap": 171430377602.14075
+  },
+  "MCD": {
+   "ticker": "MCD",
+   "current_price": 231.83,
+   "previous_close": 231.39,
+   "change": 0.44,
+   "change_percent": 0.19,
+   "day_high": 232.84,
+   "day_low": 229.61,
+   "year_high": 341.75,
+   "year_low": 230.88,
+   "market_cap": 164052537427.46033
+  },
+  "NKE": {
+   "ticker": "NKE",
+   "current_price": 35.15,
+   "previous_close": 35.34,
+   "change": -0.19,
+   "change_percent": -0.54,
+   "day_high": 36.24,
+   "day_low": 35.02,
+   "year_high": 76.97,
+   "year_low": 35.16,
+   "market_cap": 52053181469.60429
+  },
+  "INTC": {
+   "ticker": "INTC",
+   "current_price": 120.0,
+   "previous_close": 120.46,
+   "change": -0.46,
+   "change_percent": -0.38,
+   "day_high": 122.15,
+   "day_low": 117.35,
+   "year_high": 142.35,
+   "year_low": 32.89,
+   "market_cap": 634332631440.0
+  },
+  "CSCO": {
+   "ticker": "CSCO",
+   "current_price": 108.76,
+   "previous_close": 107.7,
+   "change": 1.06,
+   "change_percent": 0.98,
+   "day_high": 109.08,
+   "day_low": 106.92,
+   "year_high": 130.37,
+   "year_low": 66.81,
+   "market_cap": 428795756729.7542
+  },
+  "PFE": {
+   "ticker": "PFE",
+   "current_price": 28.12,
+   "previous_close": 28.59,
+   "change": -0.47,
+   "change_percent": -1.64,
+   "day_high": 28.59,
+   "day_low": 28.08,
+   "year_high": 29.21,
+   "year_low": 23.62,
+   "market_cap": 160274826106.03644
+  },
+  "XOM": {
+   "ticker": "XOM",
+   "current_price": 163.82,
+   "previous_close": 162.13,
+   "change": 1.69,
+   "change_percent": 1.04,
+   "day_high": 164.08,
+   "day_low": 160.81,
+   "year_high": 176.41,
+   "year_low": 110.39,
+   "market_cap": 673613447403.7427
+  },
+  "BAC": {
+   "ticker": "BAC",
+   "current_price": 53.73,
+   "previous_close": 54.6,
+   "change": -0.87,
+   "change_percent": -1.59,
+   "day_high": 54.34,
+   "day_low": 52.89,
+   "year_high": 65.23,
+   "year_low": 46.12,
+   "market_cap": 375720366450.4238
+  },
+  "HD": {
+   "ticker": "HD",
+   "current_price": 282.46,
+   "previous_close": 284.94,
+   "change": -2.48,
+   "change_percent": -0.87,
+   "day_high": 283.85,
+   "day_low": 277.15,
+   "year_high": 397.63,
+   "year_low": 284.01,
+   "market_cap": 281807403234.7801
   }
  },
  "get_option_chain": {
@@ -2181,6 +2301,1096 @@
      "implied_volatility": 0.1992
     }
    ]
+  },
+  "ORCL": {
+   "ticker": "ORCL",
+   "expiration": "2026-10-02",
+   "current_price": 138.07,
+   "calls_near_atm": [
+    {
+     "contract": "ORCL261002C00138000",
+     "strike": 138.0,
+     "last_price": 1.65,
+     "bid": 1.57,
+     "ask": 1.67,
+     "volume": 6033,
+     "open_interest": 4562,
+     "implied_volatility": 0.5498
+    },
+    {
+     "contract": "ORCL261002C00139000",
+     "strike": 139.0,
+     "last_price": 1.2,
+     "bid": 1.14,
+     "ask": 1.23,
+     "volume": 3580,
+     "open_interest": 1957,
+     "implied_volatility": 0.5557
+    },
+    {
+     "contract": "ORCL261002C00137000",
+     "strike": 137.0,
+     "last_price": 2.17,
+     "bid": 2.1,
+     "ask": 2.26,
+     "volume": 4297,
+     "open_interest": 1711,
+     "implied_volatility": 0.5527
+    },
+    {
+     "contract": "ORCL261002C00140000",
+     "strike": 140.0,
+     "last_price": 0.84,
+     "bid": 0.82,
+     "ask": 0.89,
+     "volume": 19610,
+     "open_interest": 6963,
+     "implied_volatility": 0.5659
+    },
+    {
+     "contract": "ORCL261002C00136000",
+     "strike": 136.0,
+     "last_price": 3.0,
+     "bid": 2.73,
+     "ask": 2.89,
+     "volume": 1869,
+     "open_interest": 1137,
+     "implied_volatility": 0.5459
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "ORCL261002P00138000",
+     "strike": 138.0,
+     "last_price": 1.5,
+     "bid": 1.47,
+     "ask": 1.55,
+     "volume": 1867,
+     "open_interest": 2405,
+     "implied_volatility": 0.5361
+    },
+    {
+     "contract": "ORCL261002P00139000",
+     "strike": 139.0,
+     "last_price": 2.08,
+     "bid": 1.85,
+     "ask": 2.13,
+     "volume": 684,
+     "open_interest": 1509,
+     "implied_volatility": 0.5112
+    },
+    {
+     "contract": "ORCL261002P00137000",
+     "strike": 137.0,
+     "last_price": 1.05,
+     "bid": 1.02,
+     "ask": 1.08,
+     "volume": 2350,
+     "open_interest": 1557,
+     "implied_volatility": 0.5313
+    },
+    {
+     "contract": "ORCL261002P00140000",
+     "strike": 140.0,
+     "last_price": 2.8,
+     "bid": 2.64,
+     "ask": 2.8,
+     "volume": 1284,
+     "open_interest": 4314,
+     "implied_volatility": 0.541
+    },
+    {
+     "contract": "ORCL261002P00136000",
+     "strike": 136.0,
+     "last_price": 0.71,
+     "bid": 0.66,
+     "ask": 0.74,
+     "volume": 3181,
+     "open_interest": 1818,
+     "implied_volatility": 0.5293
+    }
+   ]
+  },
+  "PEP": {
+   "ticker": "PEP",
+   "expiration": "2026-10-02",
+   "current_price": 125.6,
+   "calls_near_atm": [
+    {
+     "contract": "PEP261002C00126000",
+     "strike": 126.0,
+     "last_price": 0.53,
+     "bid": 0.35,
+     "ask": 0.6,
+     "volume": 1385,
+     "open_interest": 17,
+     "implied_volatility": 0.2983
+    },
+    {
+     "contract": "PEP261002C00125000",
+     "strike": 125.0,
+     "last_price": 1.0,
+     "bid": 0.95,
+     "ask": 1.09,
+     "volume": 54,
+     "open_interest": 313,
+     "implied_volatility": 0.2871
+    },
+    {
+     "contract": "PEP261002C00127000",
+     "strike": 127.0,
+     "last_price": 0.22,
+     "bid": 0.16,
+     "ask": 0.22,
+     "volume": 679,
+     "open_interest": 267,
+     "implied_volatility": 0.2695
+    },
+    {
+     "contract": "PEP261002C00124000",
+     "strike": 124.0,
+     "last_price": 1.78,
+     "bid": 1.2,
+     "ask": 1.98,
+     "volume": 9,
+     "open_interest": 16,
+     "implied_volatility": 0.376
+    },
+    {
+     "contract": "PEP261002C00128000",
+     "strike": 128.0,
+     "last_price": 0.08,
+     "bid": 0.03,
+     "ask": 0.2,
+     "volume": 355,
+     "open_interest": 605,
+     "implied_volatility": 0.3613
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "PEP261002P00126000",
+     "strike": 126.0,
+     "last_price": 0.7,
+     "bid": 0.24,
+     "ask": 1.2,
+     "volume": 1165,
+     "open_interest": 426,
+     "implied_volatility": 0.376
+    },
+    {
+     "contract": "PEP261002P00125000",
+     "strike": 125.0,
+     "last_price": 0.32,
+     "bid": 0.25,
+     "ask": 0.48,
+     "volume": 295,
+     "open_interest": 652,
+     "implied_volatility": 0.2832
+    },
+    {
+     "contract": "PEP261002P00127000",
+     "strike": 127.0,
+     "last_price": 1.35,
+     "bid": 1.01,
+     "ask": 2.91,
+     "volume": 128,
+     "open_interest": 852,
+     "implied_volatility": 0.8105
+    },
+    {
+     "contract": "PEP261002P00124000",
+     "strike": 124.0,
+     "last_price": 0.12,
+     "bid": 0.01,
+     "ask": 0.17,
+     "volume": 204,
+     "open_interest": 223,
+     "implied_volatility": 0.2676
+    },
+    {
+     "contract": "PEP261002P00128000",
+     "strike": 128.0,
+     "last_price": 2.24,
+     "bid": 2.25,
+     "ask": 3.95,
+     "volume": 132,
+     "open_interest": 896,
+     "implied_volatility": 0.6143
+    }
+   ]
+  },
+  "MCD": {
+   "ticker": "MCD",
+   "expiration": "2026-10-02",
+   "current_price": 231.83,
+   "calls_near_atm": [
+    {
+     "contract": "MCD261002C00232500",
+     "strike": 232.5,
+     "last_price": 0.91,
+     "bid": 0.8,
+     "ask": 0.96,
+     "volume": 1930,
+     "open_interest": 839,
+     "implied_volatility": 0.2612
+    },
+    {
+     "contract": "MCD261002C00230000",
+     "strike": 230.0,
+     "last_price": 2.29,
+     "bid": 1.94,
+     "ask": 2.55,
+     "volume": 570,
+     "open_interest": 205,
+     "implied_volatility": 0.3018
+    },
+    {
+     "contract": "MCD261002C00235000",
+     "strike": 235.0,
+     "last_price": 0.23,
+     "bid": 0.23,
+     "ask": 0.31,
+     "volume": 2184,
+     "open_interest": 1422,
+     "implied_volatility": 0.2744
+    },
+    {
+     "contract": "MCD261002C00227500",
+     "strike": 227.5,
+     "last_price": 4.7,
+     "bid": 4.1,
+     "ask": 5.15,
+     "volume": 22,
+     "open_interest": 4,
+     "implied_volatility": 0.4976
+    },
+    {
+     "contract": "MCD261002C00237500",
+     "strike": 237.5,
+     "last_price": 0.07,
+     "bid": 0.05,
+     "ask": 0.07,
+     "volume": 416,
+     "open_interest": 1301,
+     "implied_volatility": 0.2793
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "MCD261002P00232500",
+     "strike": 232.5,
+     "last_price": 1.66,
+     "bid": 1.18,
+     "ask": 2.0,
+     "volume": 221,
+     "open_interest": 675,
+     "implied_volatility": 0.3389
+    },
+    {
+     "contract": "MCD261002P00230000",
+     "strike": 230.0,
+     "last_price": 0.5,
+     "bid": 0.4,
+     "ask": 0.56,
+     "volume": 790,
+     "open_interest": 1107,
+     "implied_volatility": 0.2637
+    },
+    {
+     "contract": "MCD261002P00235000",
+     "strike": 235.0,
+     "last_price": 3.31,
+     "bid": 3.1,
+     "ask": 3.6,
+     "volume": 168,
+     "open_interest": 749,
+     "implied_volatility": 0.311
+    },
+    {
+     "contract": "MCD261002P00227500",
+     "strike": 227.5,
+     "last_price": 0.1,
+     "bid": 0.08,
+     "ask": 0.18,
+     "volume": 561,
+     "open_interest": 663,
+     "implied_volatility": 0.29
+    },
+    {
+     "contract": "MCD261002P00237500",
+     "strike": 237.5,
+     "last_price": 6.27,
+     "bid": 5.45,
+     "ask": 6.05,
+     "volume": 150,
+     "open_interest": 699,
+     "implied_volatility": 0.4297
+    }
+   ]
+  },
+  "NKE": {
+   "ticker": "NKE",
+   "expiration": "2026-10-02",
+   "current_price": 35.15,
+   "calls_near_atm": [
+    {
+     "contract": "NKE261002C00035000",
+     "strike": 35.0,
+     "last_price": 1.7,
+     "bid": 1.65,
+     "ask": 1.7,
+     "volume": 3723,
+     "open_interest": 2417,
+     "implied_volatility": 2.1836
+    },
+    {
+     "contract": "NKE261002C00035500",
+     "strike": 35.5,
+     "last_price": 1.5,
+     "bid": 1.44,
+     "ask": 1.5,
+     "volume": 4615,
+     "open_interest": 1483,
+     "implied_volatility": 2.2227
+    },
+    {
+     "contract": "NKE261002C00034500",
+     "strike": 34.5,
+     "last_price": 1.93,
+     "bid": 1.84,
+     "ask": 2.02,
+     "volume": 325,
+     "open_interest": 363,
+     "implied_volatility": 2.1797
+    },
+    {
+     "contract": "NKE261002C00036000",
+     "strike": 36.0,
+     "last_price": 1.28,
+     "bid": 1.26,
+     "ask": 1.33,
+     "volume": 12283,
+     "open_interest": 7682,
+     "implied_volatility": 2.2715
+    },
+    {
+     "contract": "NKE261002C00034000",
+     "strike": 34.0,
+     "last_price": 2.15,
+     "bid": 2.1,
+     "ask": 2.29,
+     "volume": 613,
+     "open_interest": 303,
+     "implied_volatility": 2.1523
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "NKE261002P00035000",
+     "strike": 35.0,
+     "last_price": 1.43,
+     "bid": 1.45,
+     "ask": 1.6,
+     "volume": 14597,
+     "open_interest": 9631,
+     "implied_volatility": 2.1836
+    },
+    {
+     "contract": "NKE261002P00035500",
+     "strike": 35.5,
+     "last_price": 1.86,
+     "bid": 1.85,
+     "ask": 1.9,
+     "volume": 6011,
+     "open_interest": 3569,
+     "implied_volatility": 2.2988
+    },
+    {
+     "contract": "NKE261002P00034500",
+     "strike": 34.5,
+     "last_price": 1.33,
+     "bid": 1.25,
+     "ask": 1.35,
+     "volume": 4515,
+     "open_interest": 1322,
+     "implied_volatility": 2.207
+    },
+    {
+     "contract": "NKE261002P00036000",
+     "strike": 36.0,
+     "last_price": 2.15,
+     "bid": 2.06,
+     "ask": 2.23,
+     "volume": 5441,
+     "open_interest": 7853,
+     "implied_volatility": 2.2715
+    },
+    {
+     "contract": "NKE261002P00034000",
+     "strike": 34.0,
+     "last_price": 1.09,
+     "bid": 1.06,
+     "ask": 1.1,
+     "volume": 11798,
+     "open_interest": 4712,
+     "implied_volatility": 2.2031
+    }
+   ]
+  },
+  "INTC": {
+   "ticker": "INTC",
+   "expiration": "2026-10-02",
+   "current_price": 120.0,
+   "calls_near_atm": [
+    {
+     "contract": "INTC261002C00120000",
+     "strike": 120.0,
+     "last_price": 1.75,
+     "bid": 1.76,
+     "ask": 1.8,
+     "volume": 30997,
+     "open_interest": 10496,
+     "implied_volatility": 0.7105
+    },
+    {
+     "contract": "INTC261002C00119000",
+     "strike": 119.0,
+     "last_price": 2.3,
+     "bid": 2.29,
+     "ask": 2.35,
+     "volume": 12854,
+     "open_interest": 2248,
+     "implied_volatility": 0.7119
+    },
+    {
+     "contract": "INTC261002C00121000",
+     "strike": 121.0,
+     "last_price": 1.32,
+     "bid": 1.32,
+     "ask": 1.36,
+     "volume": 16993,
+     "open_interest": 3496,
+     "implied_volatility": 0.7139
+    },
+    {
+     "contract": "INTC261002C00118000",
+     "strike": 118.0,
+     "last_price": 2.9,
+     "bid": 2.91,
+     "ask": 3.0,
+     "volume": 4009,
+     "open_interest": 2229,
+     "implied_volatility": 0.7158
+    },
+    {
+     "contract": "INTC261002C00122000",
+     "strike": 122.0,
+     "last_price": 0.96,
+     "bid": 0.97,
+     "ask": 1.02,
+     "volume": 19470,
+     "open_interest": 3333,
+     "implied_volatility": 0.7217
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "INTC261002P00120000",
+     "strike": 120.0,
+     "last_price": 1.69,
+     "bid": 1.69,
+     "ask": 1.73,
+     "volume": 15022,
+     "open_interest": 4879,
+     "implied_volatility": 0.6826
+    },
+    {
+     "contract": "INTC261002P00119000",
+     "strike": 119.0,
+     "last_price": 1.24,
+     "bid": 1.23,
+     "ask": 1.26,
+     "volume": 18442,
+     "open_interest": 2908,
+     "implied_volatility": 0.6807
+    },
+    {
+     "contract": "INTC261002P00121000",
+     "strike": 121.0,
+     "last_price": 2.26,
+     "bid": 2.24,
+     "ask": 2.28,
+     "volume": 13044,
+     "open_interest": 985,
+     "implied_volatility": 0.6812
+    },
+    {
+     "contract": "INTC261002P00118000",
+     "strike": 118.0,
+     "last_price": 0.87,
+     "bid": 0.86,
+     "ask": 0.89,
+     "volume": 17534,
+     "open_interest": 3122,
+     "implied_volatility": 0.6802
+    },
+    {
+     "contract": "INTC261002P00122000",
+     "strike": 122.0,
+     "last_price": 2.92,
+     "bid": 2.88,
+     "ask": 2.94,
+     "volume": 1376,
+     "open_interest": 1031,
+     "implied_volatility": 0.6846
+    }
+   ]
+  },
+  "CSCO": {
+   "ticker": "CSCO",
+   "expiration": "2026-10-02",
+   "current_price": 108.76,
+   "calls_near_atm": [
+    {
+     "contract": "CSCO261002C00109000",
+     "strike": 109.0,
+     "last_price": 0.4,
+     "bid": 0.38,
+     "ask": 0.48,
+     "volume": 773,
+     "open_interest": 2569,
+     "implied_volatility": 0.2607
+    },
+    {
+     "contract": "CSCO261002C00108000",
+     "strike": 108.0,
+     "last_price": 0.95,
+     "bid": 0.8,
+     "ask": 0.98,
+     "volume": 258,
+     "open_interest": 1114,
+     "implied_volatility": 0.2266
+    },
+    {
+     "contract": "CSCO261002C00110000",
+     "strike": 110.0,
+     "last_price": 0.18,
+     "bid": 0.14,
+     "ask": 0.18,
+     "volume": 845,
+     "open_interest": 2006,
+     "implied_volatility": 0.2666
+    },
+    {
+     "contract": "CSCO261002C00107000",
+     "strike": 107.0,
+     "last_price": 1.65,
+     "bid": 1.54,
+     "ask": 1.85,
+     "volume": 399,
+     "open_interest": 1511,
+     "implied_volatility": 0.2666
+    },
+    {
+     "contract": "CSCO261002C00111000",
+     "strike": 111.0,
+     "last_price": 0.08,
+     "bid": 0.03,
+     "ask": 0.1,
+     "volume": 1655,
+     "open_interest": 2370,
+     "implied_volatility": 0.3203
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "CSCO261002P00109000",
+     "strike": 109.0,
+     "last_price": 0.97,
+     "bid": 0.74,
+     "ask": 1.22,
+     "volume": 44,
+     "open_interest": 157,
+     "implied_volatility": 0.4824
+    },
+    {
+     "contract": "CSCO261002P00108000",
+     "strike": 108.0,
+     "last_price": 0.51,
+     "bid": 0.46,
+     "ask": 0.7,
+     "volume": 1063,
+     "open_interest": 512,
+     "implied_volatility": 0.458
+    },
+    {
+     "contract": "CSCO261002P00110000",
+     "strike": 110.0,
+     "last_price": 1.91,
+     "bid": 1.22,
+     "ask": 2.09,
+     "volume": 123,
+     "open_interest": 495,
+     "implied_volatility": 0.6055
+    },
+    {
+     "contract": "CSCO261002P00107000",
+     "strike": 107.0,
+     "last_price": 0.25,
+     "bid": 0.21,
+     "ask": 0.27,
+     "volume": 329,
+     "open_interest": 498,
+     "implied_volatility": 0.3926
+    },
+    {
+     "contract": "CSCO261002P00111000",
+     "strike": 111.0,
+     "last_price": 3.12,
+     "bid": 1.95,
+     "ask": 3.5,
+     "volume": 38,
+     "open_interest": 628,
+     "implied_volatility": 0.5723
+    }
+   ]
+  },
+  "PFE": {
+   "ticker": "PFE",
+   "expiration": "2026-10-02",
+   "current_price": 28.12,
+   "calls_near_atm": [
+    {
+     "contract": "PFE261002C00028000",
+     "strike": 28.0,
+     "last_price": 0.21,
+     "bid": 0.18,
+     "ask": 0.23,
+     "volume": 1028,
+     "open_interest": 3963,
+     "implied_volatility": 0.2774
+    },
+    {
+     "contract": "PFE261002C00028500",
+     "strike": 28.5,
+     "last_price": 0.04,
+     "bid": 0.03,
+     "ask": 0.04,
+     "volume": 4137,
+     "open_interest": 11009,
+     "implied_volatility": 0.2813
+    },
+    {
+     "contract": "PFE261002C00027500",
+     "strike": 27.5,
+     "last_price": 0.71,
+     "bid": 0.58,
+     "ask": 0.73,
+     "volume": 193,
+     "open_interest": 862,
+     "implied_volatility": 0.5703
+    },
+    {
+     "contract": "PFE261002C00029000",
+     "strike": 29.0,
+     "last_price": 0.01,
+     "bid": 0.0,
+     "ask": 0.02,
+     "volume": 1467,
+     "open_interest": 7686,
+     "implied_volatility": 0.4063
+    },
+    {
+     "contract": "PFE261002C00027000",
+     "strike": 27.0,
+     "last_price": 1.17,
+     "bid": 1.07,
+     "ask": 1.18,
+     "volume": 213,
+     "open_interest": 830,
+     "implied_volatility": 0.6719
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "PFE261002P00028000",
+     "strike": 28.0,
+     "last_price": 0.09,
+     "bid": 0.03,
+     "ask": 0.09,
+     "volume": 1569,
+     "open_interest": 4806,
+     "implied_volatility": 0.2422
+    },
+    {
+     "contract": "PFE261002P00028500",
+     "strike": 28.5,
+     "last_price": 0.41,
+     "bid": 0.37,
+     "ask": 0.47,
+     "volume": 3605,
+     "open_interest": 2091,
+     "implied_volatility": 0.3945
+    },
+    {
+     "contract": "PFE261002P00027500",
+     "strike": 27.5,
+     "last_price": 0.01,
+     "bid": 0.0,
+     "ask": 0.01,
+     "volume": 309,
+     "open_interest": 1885,
+     "implied_volatility": 0.2734
+    },
+    {
+     "contract": "PFE261002P00029000",
+     "strike": 29.0,
+     "last_price": 0.89,
+     "bid": 0.79,
+     "ask": 0.93,
+     "volume": 798,
+     "open_interest": 758,
+     "implied_volatility": 0.5195
+    },
+    {
+     "contract": "PFE261002P00027000",
+     "strike": 27.0,
+     "last_price": 0.01,
+     "bid": 0.0,
+     "ask": 0.02,
+     "volume": 10,
+     "open_interest": 5109,
+     "implied_volatility": 0.5078
+    }
+   ]
+  },
+  "XOM": {
+   "ticker": "XOM",
+   "expiration": "2026-10-02",
+   "current_price": 163.82,
+   "calls_near_atm": [
+    {
+     "contract": "XOM261002C00165000",
+     "strike": 165.0,
+     "last_price": 0.52,
+     "bid": 0.47,
+     "ask": 0.57,
+     "volume": 2425,
+     "open_interest": 3324,
+     "implied_volatility": 0.3076
+    },
+    {
+     "contract": "XOM261002C00162500",
+     "strike": 162.5,
+     "last_price": 1.92,
+     "bid": 1.67,
+     "ask": 1.96,
+     "volume": 480,
+     "open_interest": 2244,
+     "implied_volatility": 0.3477
+    },
+    {
+     "contract": "XOM261002C00167500",
+     "strike": 167.5,
+     "last_price": 0.12,
+     "bid": 0.09,
+     "ask": 0.13,
+     "volume": 1185,
+     "open_interest": 4125,
+     "implied_volatility": 0.3272
+    },
+    {
+     "contract": "XOM261002C00160000",
+     "strike": 160.0,
+     "last_price": 4.04,
+     "bid": 3.5,
+     "ask": 4.45,
+     "volume": 101,
+     "open_interest": 680,
+     "implied_volatility": 0.5859
+    },
+    {
+     "contract": "XOM261002C00170000",
+     "strike": 170.0,
+     "last_price": 0.03,
+     "bid": 0.02,
+     "ask": 0.03,
+     "volume": 673,
+     "open_interest": 3232,
+     "implied_volatility": 0.3633
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "XOM261002P00165000",
+     "strike": 165.0,
+     "last_price": 1.89,
+     "bid": 1.5,
+     "ask": 1.89,
+     "volume": 138,
+     "open_interest": 180,
+     "implied_volatility": 0.3525
+    },
+    {
+     "contract": "XOM261002P00162500",
+     "strike": 162.5,
+     "last_price": 0.45,
+     "bid": 0.4,
+     "ask": 0.54,
+     "volume": 1122,
+     "open_interest": 1427,
+     "implied_volatility": 0.3149
+    },
+    {
+     "contract": "XOM261002P00167500",
+     "strike": 167.5,
+     "last_price": 4.35,
+     "bid": 3.0,
+     "ask": 4.35,
+     "volume": 41,
+     "open_interest": 184,
+     "implied_volatility": 0.5762
+    },
+    {
+     "contract": "XOM261002P00160000",
+     "strike": 160.0,
+     "last_price": 0.1,
+     "bid": 0.08,
+     "ask": 0.11,
+     "volume": 1799,
+     "open_interest": 1470,
+     "implied_volatility": 0.3301
+    },
+    {
+     "contract": "XOM261002P00170000",
+     "strike": 170.0,
+     "last_price": 6.2,
+     "bid": 5.2,
+     "ask": 7.0,
+     "volume": 2,
+     "open_interest": 53,
+     "implied_volatility": 0.8408
+    }
+   ]
+  },
+  "BAC": {
+   "ticker": "BAC",
+   "expiration": "2026-10-02",
+   "current_price": 53.73,
+   "calls_near_atm": [
+    {
+     "contract": "BAC261002C00054000",
+     "strike": 54.0,
+     "last_price": 0.25,
+     "bid": 0.23,
+     "ask": 0.25,
+     "volume": 20892,
+     "open_interest": 1021,
+     "implied_volatility": 0.3281
+    },
+    {
+     "contract": "BAC261002C00053000",
+     "strike": 53.0,
+     "last_price": 0.85,
+     "bid": 0.82,
+     "ask": 0.87,
+     "volume": 2834,
+     "open_interest": 85,
+     "implied_volatility": 0.3633
+    },
+    {
+     "contract": "BAC261002C00055000",
+     "strike": 55.0,
+     "last_price": 0.03,
+     "bid": 0.03,
+     "ask": 0.04,
+     "volume": 8723,
+     "open_interest": 3536,
+     "implied_volatility": 0.3359
+    },
+    {
+     "contract": "BAC261002C00052000",
+     "strike": 52.0,
+     "last_price": 1.77,
+     "bid": 1.65,
+     "ask": 1.89,
+     "volume": 70,
+     "open_interest": 83,
+     "implied_volatility": 0.6484
+    },
+    {
+     "contract": "BAC261002C00056000",
+     "strike": 56.0,
+     "last_price": 0.02,
+     "bid": 0.0,
+     "ask": 0.02,
+     "volume": 1430,
+     "open_interest": 5063,
+     "implied_volatility": 0.4453
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "BAC261002P00054000",
+     "strike": 54.0,
+     "last_price": 0.51,
+     "bid": 0.48,
+     "ask": 0.51,
+     "volume": 7857,
+     "open_interest": 27559,
+     "implied_volatility": 0.3184
+    },
+    {
+     "contract": "BAC261002P00053000",
+     "strike": 53.0,
+     "last_price": 0.1,
+     "bid": 0.1,
+     "ask": 0.12,
+     "volume": 5209,
+     "open_interest": 1453,
+     "implied_volatility": 0.3399
+    },
+    {
+     "contract": "BAC261002P00055000",
+     "strike": 55.0,
+     "last_price": 1.32,
+     "bid": 1.19,
+     "ask": 1.34,
+     "volume": 635,
+     "open_interest": 16874,
+     "implied_volatility": 0.3906
+    },
+    {
+     "contract": "BAC261002P00052000",
+     "strike": 52.0,
+     "last_price": 0.03,
+     "bid": 0.02,
+     "ask": 0.03,
+     "volume": 5360,
+     "open_interest": 1165,
+     "implied_volatility": 0.4063
+    },
+    {
+     "contract": "BAC261002P00056000",
+     "strike": 56.0,
+     "last_price": 2.29,
+     "bid": 2.18,
+     "ask": 2.38,
+     "volume": 7807,
+     "open_interest": 5059,
+     "implied_volatility": 0.6641
+    }
+   ]
+  },
+  "HD": {
+   "ticker": "HD",
+   "expiration": "2026-10-02",
+   "current_price": 282.46,
+   "calls_near_atm": [
+    {
+     "contract": "HD261002C00280000",
+     "strike": 280.0,
+     "last_price": 3.8,
+     "bid": 3.05,
+     "ask": 4.25,
+     "volume": 410,
+     "open_interest": 40,
+     "implied_volatility": 0.4858
+    },
+    {
+     "contract": "HD261002C00285000",
+     "strike": 285.0,
+     "last_price": 1.15,
+     "bid": 0.98,
+     "ask": 1.27,
+     "volume": 1682,
+     "open_interest": 98,
+     "implied_volatility": 0.3921
+    },
+    {
+     "contract": "HD261002C00287500",
+     "strike": 287.5,
+     "last_price": 0.58,
+     "bid": 0.53,
+     "ask": 0.64,
+     "volume": 2500,
+     "open_interest": 126,
+     "implied_volatility": 0.3945
+    },
+    {
+     "contract": "HD261002C00275000",
+     "strike": 275.0,
+     "last_price": 7.5,
+     "bid": 6.8,
+     "ask": 8.95,
+     "volume": 60,
+     "open_interest": 7,
+     "implied_volatility": 0.7231
+    },
+    {
+     "contract": "HD261002C00290000",
+     "strike": 290.0,
+     "last_price": 0.26,
+     "bid": 0.21,
+     "ask": 0.31,
+     "volume": 660,
+     "open_interest": 316,
+     "implied_volatility": 0.4043
+    }
+   ],
+   "puts_near_atm": [
+    {
+     "contract": "HD261002P00282500",
+     "strike": 282.5,
+     "last_price": 1.82,
+     "bid": 1.4,
+     "ask": 2.23,
+     "volume": 208,
+     "open_interest": 478,
+     "implied_volatility": 0.3745
+    },
+    {
+     "contract": "HD261002P00280000",
+     "strike": 280.0,
+     "last_price": 0.87,
+     "bid": 0.8,
+     "ask": 1.0,
+     "volume": 223,
+     "open_interest": 795,
+     "implied_volatility": 0.3394
+    },
+    {
+     "contract": "HD261002P00285000",
+     "strike": 285.0,
+     "last_price": 3.78,
+     "bid": 2.57,
+     "ask": 4.5,
+     "volume": 343,
+     "open_interest": 686,
+     "implied_volatility": 0.5171
+    },
+    {
+     "contract": "HD261002P00277500",
+     "strike": 277.5,
+     "last_price": 0.32,
+     "bid": 0.26,
+     "ask": 0.5,
+     "volume": 945,
+     "open_interest": 180,
+     "implied_volatility": 0.3623
+    },
+    {
+     "contract": "HD261002P00287500",
+     "strike": 287.5,
+     "last_price": 5.43,
+     "bid": 4.65,
+     "ask": 6.3,
+     "volume": 725,
+     "open_interest": 671,
+     "implied_volatility": 0.5313
+    }
+   ]
   }
  },
  "get_stock_news": {
@@ -2813,6 +4023,46 @@
      "published": "2026-09-30T15:55:41Z"
     }
    ]
+  },
+  "ORCL": {
+   "ticker": "ORCL",
+   "articles": []
+  },
+  "PEP": {
+   "ticker": "PEP",
+   "articles": []
+  },
+  "MCD": {
+   "ticker": "MCD",
+   "articles": []
+  },
+  "NKE": {
+   "ticker": "NKE",
+   "articles": []
+  },
+  "INTC": {
+   "ticker": "INTC",
+   "articles": []
+  },
+  "CSCO": {
+   "ticker": "CSCO",
+   "articles": []
+  },
+  "PFE": {
+   "ticker": "PFE",
+   "articles": []
+  },
+  "XOM": {
+   "ticker": "XOM",
+   "articles": []
+  },
+  "BAC": {
+   "ticker": "BAC",
+   "articles": []
+  },
+  "HD": {
+   "ticker": "HD",
+   "articles": []
   }
  },
  "get_historical_data": {
@@ -12769,6 +14019,5536 @@
     }
    ],
    "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 127 trading days."
+  },
+  "ORCL|1d": {
+   "ticker": "ORCL",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 138.07000732421875,
+    "last_close": 138.07000732421875,
+    "period_high": 140.25,
+    "period_low": 135.3300018310547,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "ORCL|1mo": {
+   "ticker": "ORCL",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 145.75,
+    "last_close": 138.07000732421875,
+    "period_high": 170.6999969482422,
+    "period_low": 131.5800018310547,
+    "pct_change": -5.27
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 150.47000122070312,
+     "high": 150.89999389648438,
+     "low": 144.39999389648438,
+     "close": 147.61000061035156,
+     "volume": 39324900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 148.92999267578125,
+     "high": 149.97999572753906,
+     "low": 146.16000366210938,
+     "close": 148.55999755859375,
+     "volume": 22418300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 151.25,
+     "high": 153.60000610351562,
+     "low": 148.60000610351562,
+     "close": 149.1999969482422,
+     "volume": 31260000
+    },
+    {
+     "date": "2026-09-23",
+     "open": 148.3000030517578,
+     "high": 148.66000366210938,
+     "low": 144.22999572753906,
+     "close": 144.55999755859375,
+     "volume": 22682300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 137.32000732421875,
+     "high": 140.33999633789062,
+     "low": 133.47999572753906,
+     "close": 139.5399932861328,
+     "volume": 56629400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "ORCL|1y": {
+   "ticker": "ORCL",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 288.7799987792969,
+    "last_close": 138.07000732421875,
+    "period_high": 322.5400085449219,
+    "period_low": 114.5,
+    "pct_change": -52.19
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 150.47000122070312,
+     "high": 150.89999389648438,
+     "low": 144.39999389648438,
+     "close": 147.61000061035156,
+     "volume": 39324900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 148.92999267578125,
+     "high": 149.97999572753906,
+     "low": 146.16000366210938,
+     "close": 148.55999755859375,
+     "volume": 22418300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 151.25,
+     "high": 153.60000610351562,
+     "low": 148.60000610351562,
+     "close": 149.1999969482422,
+     "volume": 31260000
+    },
+    {
+     "date": "2026-09-23",
+     "open": 148.3000030517578,
+     "high": 148.66000366210938,
+     "low": 144.22999572753906,
+     "close": 144.55999755859375,
+     "volume": 22682300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 137.32000732421875,
+     "high": 140.33999633789062,
+     "low": 133.47999572753906,
+     "close": 139.5399932861328,
+     "volume": 56629400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "ORCL|3mo": {
+   "ticker": "ORCL",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 140.27000427246094,
+    "last_close": 138.07000732421875,
+    "period_high": 170.6999969482422,
+    "period_low": 114.5,
+    "pct_change": -1.57
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 150.47000122070312,
+     "high": 150.89999389648438,
+     "low": 144.39999389648438,
+     "close": 147.61000061035156,
+     "volume": 39324900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 148.92999267578125,
+     "high": 149.97999572753906,
+     "low": 146.16000366210938,
+     "close": 148.55999755859375,
+     "volume": 22418300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 151.25,
+     "high": 153.60000610351562,
+     "low": 148.60000610351562,
+     "close": 149.1999969482422,
+     "volume": 31260000
+    },
+    {
+     "date": "2026-09-23",
+     "open": 148.3000030517578,
+     "high": 148.66000366210938,
+     "low": 144.22999572753906,
+     "close": 144.55999755859375,
+     "volume": 22682300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 137.32000732421875,
+     "high": 140.33999633789062,
+     "low": 133.47999572753906,
+     "close": 139.5399932861328,
+     "volume": 56629400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "ORCL|5d": {
+   "ticker": "ORCL",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 137.10000610351562,
+    "last_close": 138.07000732421875,
+    "period_high": 143.6699981689453,
+    "period_low": 131.5800018310547,
+    "pct_change": 0.71
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "ORCL|5y": {
+   "ticker": "ORCL",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 89.26000213623047,
+    "last_close": 138.07000732421875,
+    "period_high": 345.7200012207031,
+    "period_low": 60.779998779296875,
+    "pct_change": 54.68
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 150.47000122070312,
+     "high": 150.89999389648438,
+     "low": 144.39999389648438,
+     "close": 147.61000061035156,
+     "volume": 39324900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 148.92999267578125,
+     "high": 149.97999572753906,
+     "low": 146.16000366210938,
+     "close": 148.55999755859375,
+     "volume": 22418300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 151.25,
+     "high": 153.60000610351562,
+     "low": 148.60000610351562,
+     "close": 149.1999969482422,
+     "volume": 31260000
+    },
+    {
+     "date": "2026-09-23",
+     "open": 148.3000030517578,
+     "high": 148.66000366210938,
+     "low": 144.22999572753906,
+     "close": 144.55999755859375,
+     "volume": 22682300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 137.32000732421875,
+     "high": 140.33999633789062,
+     "low": 133.47999572753906,
+     "close": 139.5399932861328,
+     "volume": 56629400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "ORCL|6mo": {
+   "ticker": "ORCL",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 146.3800048828125,
+    "last_close": 138.07000732421875,
+    "period_high": 250.25,
+    "period_low": 114.5,
+    "pct_change": -5.68
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 150.47000122070312,
+     "high": 150.89999389648438,
+     "low": 144.39999389648438,
+     "close": 147.61000061035156,
+     "volume": 39324900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 148.92999267578125,
+     "high": 149.97999572753906,
+     "low": 146.16000366210938,
+     "close": 148.55999755859375,
+     "volume": 22418300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 151.25,
+     "high": 153.60000610351562,
+     "low": 148.60000610351562,
+     "close": 149.1999969482422,
+     "volume": 31260000
+    },
+    {
+     "date": "2026-09-23",
+     "open": 148.3000030517578,
+     "high": 148.66000366210938,
+     "low": 144.22999572753906,
+     "close": 144.55999755859375,
+     "volume": 22682300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 137.32000732421875,
+     "high": 140.33999633789062,
+     "low": 133.47999572753906,
+     "close": 139.5399932861328,
+     "volume": 56629400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 138.57000732421875,
+     "high": 140.8800048828125,
+     "low": 136.9199981689453,
+     "close": 137.10000610351562,
+     "volume": 23671000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 132.72999572753906,
+     "high": 135.69000244140625,
+     "low": 131.5800018310547,
+     "close": 132.60000610351562,
+     "volume": 36060100
+    },
+    {
+     "date": "2026-09-29",
+     "open": 132.7899932861328,
+     "high": 143.6699981689453,
+     "low": 132.52999877929688,
+     "close": 137.7899932861328,
+     "volume": 45709700
+    },
+    {
+     "date": "2026-09-30",
+     "open": 136.5399932861328,
+     "high": 138.5,
+     "low": 134.75,
+     "close": 137.3000030517578,
+     "volume": 22321600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 139.60000610351562,
+     "high": 140.25,
+     "low": 135.3300018310547,
+     "close": 138.07000732421875,
+     "volume": 25354600
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "PEP|1d": {
+   "ticker": "PEP",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 125.5999984741211,
+    "last_close": 125.5999984741211,
+    "period_high": 127.30999755859375,
+    "period_low": 125.52999877929688,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "PEP|1mo": {
+   "ticker": "PEP",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 140.52000427246094,
+    "last_close": 125.5999984741211,
+    "period_high": 141.7100067138672,
+    "period_low": 125.52999877929688,
+    "pct_change": -10.62
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 132.2100067138672,
+     "high": 132.3000030517578,
+     "low": 129.5500030517578,
+     "close": 129.75,
+     "volume": 23539900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 129.64999389648438,
+     "high": 130.22000122070312,
+     "low": 127.9800033569336,
+     "close": 129.58999633789062,
+     "volume": 12011300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 130.41000366210938,
+     "high": 131.41000366210938,
+     "low": 129.92999267578125,
+     "close": 131.19000244140625,
+     "volume": 7740400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 131.08999633789062,
+     "high": 131.38999938964844,
+     "low": 129.22000122070312,
+     "close": 130.17999267578125,
+     "volume": 8173400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 131.02000427246094,
+     "high": 131.19000244140625,
+     "low": 128.11000061035156,
+     "close": 128.14999389648438,
+     "volume": 9642900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "PEP|1y": {
+   "ticker": "PEP",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 142.30999755859375,
+    "last_close": 125.5999984741211,
+    "period_high": 171.47999572753906,
+    "period_low": 125.52999877929688,
+    "pct_change": -11.74
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 132.2100067138672,
+     "high": 132.3000030517578,
+     "low": 129.5500030517578,
+     "close": 129.75,
+     "volume": 23539900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 129.64999389648438,
+     "high": 130.22000122070312,
+     "low": 127.9800033569336,
+     "close": 129.58999633789062,
+     "volume": 12011300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 130.41000366210938,
+     "high": 131.41000366210938,
+     "low": 129.92999267578125,
+     "close": 131.19000244140625,
+     "volume": 7740400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 131.08999633789062,
+     "high": 131.38999938964844,
+     "low": 129.22000122070312,
+     "close": 130.17999267578125,
+     "volume": 8173400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 131.02000427246094,
+     "high": 131.19000244140625,
+     "low": 128.11000061035156,
+     "close": 128.14999389648438,
+     "volume": 9642900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "PEP|3mo": {
+   "ticker": "PEP",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 144.22000122070312,
+    "last_close": 125.5999984741211,
+    "period_high": 149.0399932861328,
+    "period_low": 125.52999877929688,
+    "pct_change": -12.91
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 132.2100067138672,
+     "high": 132.3000030517578,
+     "low": 129.5500030517578,
+     "close": 129.75,
+     "volume": 23539900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 129.64999389648438,
+     "high": 130.22000122070312,
+     "low": 127.9800033569336,
+     "close": 129.58999633789062,
+     "volume": 12011300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 130.41000366210938,
+     "high": 131.41000366210938,
+     "low": 129.92999267578125,
+     "close": 131.19000244140625,
+     "volume": 7740400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 131.08999633789062,
+     "high": 131.38999938964844,
+     "low": 129.22000122070312,
+     "close": 130.17999267578125,
+     "volume": 8173400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 131.02000427246094,
+     "high": 131.19000244140625,
+     "low": 128.11000061035156,
+     "close": 128.14999389648438,
+     "volume": 9642900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "PEP|5d": {
+   "ticker": "PEP",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 128.6300048828125,
+    "last_close": 125.5999984741211,
+    "period_high": 129.97999572753906,
+    "period_low": 125.52999877929688,
+    "pct_change": -2.36
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "PEP|5y": {
+   "ticker": "PEP",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 150.1999969482422,
+    "last_close": 125.5999984741211,
+    "period_high": 196.8800048828125,
+    "period_low": 125.52999877929688,
+    "pct_change": -16.38
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 132.2100067138672,
+     "high": 132.3000030517578,
+     "low": 129.5500030517578,
+     "close": 129.75,
+     "volume": 23539900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 129.64999389648438,
+     "high": 130.22000122070312,
+     "low": 127.9800033569336,
+     "close": 129.58999633789062,
+     "volume": 12011300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 130.41000366210938,
+     "high": 131.41000366210938,
+     "low": 129.92999267578125,
+     "close": 131.19000244140625,
+     "volume": 7740400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 131.08999633789062,
+     "high": 131.38999938964844,
+     "low": 129.22000122070312,
+     "close": 130.17999267578125,
+     "volume": 8173400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 131.02000427246094,
+     "high": 131.19000244140625,
+     "low": 128.11000061035156,
+     "close": 128.14999389648438,
+     "volume": 9642900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "PEP|6mo": {
+   "ticker": "PEP",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 157.00999450683594,
+    "last_close": 125.5999984741211,
+    "period_high": 160.02999877929688,
+    "period_low": 125.52999877929688,
+    "pct_change": -20.01
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 132.2100067138672,
+     "high": 132.3000030517578,
+     "low": 129.5500030517578,
+     "close": 129.75,
+     "volume": 23539900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 129.64999389648438,
+     "high": 130.22000122070312,
+     "low": 127.9800033569336,
+     "close": 129.58999633789062,
+     "volume": 12011300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 130.41000366210938,
+     "high": 131.41000366210938,
+     "low": 129.92999267578125,
+     "close": 131.19000244140625,
+     "volume": 7740400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 131.08999633789062,
+     "high": 131.38999938964844,
+     "low": 129.22000122070312,
+     "close": 130.17999267578125,
+     "volume": 8173400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 131.02000427246094,
+     "high": 131.19000244140625,
+     "low": 128.11000061035156,
+     "close": 128.14999389648438,
+     "volume": 9642900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 127.75,
+     "high": 128.72000122070312,
+     "low": 126.9000015258789,
+     "close": 128.6300048828125,
+     "volume": 6705400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 127.4800033569336,
+     "high": 128.75,
+     "low": 126.72000122070312,
+     "close": 128.5,
+     "volume": 7512700
+    },
+    {
+     "date": "2026-09-29",
+     "open": 126.51000213623047,
+     "high": 128.94000244140625,
+     "low": 126.41999816894531,
+     "close": 128.69000244140625,
+     "volume": 8413900
+    },
+    {
+     "date": "2026-09-30",
+     "open": 128.89999389648438,
+     "high": 129.97999572753906,
+     "low": 126.69999694824219,
+     "close": 126.72000122070312,
+     "volume": 9807500
+    },
+    {
+     "date": "2026-10-01",
+     "open": 126.94000244140625,
+     "high": 127.30999755859375,
+     "low": 125.52999877929688,
+     "close": 125.5999984741211,
+     "volume": 8538700
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "MCD|1d": {
+   "ticker": "MCD",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 231.8300018310547,
+    "last_close": 231.8300018310547,
+    "period_high": 232.83999633789062,
+    "period_low": 229.61000061035156,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "MCD|1mo": {
+   "ticker": "MCD",
+   "period": "1mo",
+   "num_points_total": 22,
+   "summary": {
+    "first_close": null,
+    "last_close": 231.8300018310547,
+    "period_high": 262.7799987792969,
+    "period_low": 229.61000061035156,
+    "pct_change": null
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 248.27000427246094,
+     "high": 250.4499969482422,
+     "low": 247.64999389648438,
+     "close": 248.24000549316406,
+     "volume": 9577400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 249.41000366210938,
+     "high": 250.3800048828125,
+     "low": 246.52000427246094,
+     "close": 247.8800048828125,
+     "volume": 6334600
+    },
+    {
+     "date": "2026-09-22",
+     "open": 250.67999267578125,
+     "high": 252.05999755859375,
+     "low": 249.3699951171875,
+     "close": 250.35000610351562,
+     "volume": 5016800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 250.2899932861328,
+     "high": 250.32000732421875,
+     "low": 234.02999877929688,
+     "close": 238.32000732421875,
+     "volume": 16605700
+    },
+    {
+     "date": "2026-09-24",
+     "open": 239.6999969482422,
+     "high": 242.55999755859375,
+     "low": 237.02000427246094,
+     "close": 237.02000427246094,
+     "volume": 7387500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 22 trading days."
+  },
+  "MCD|1y": {
+   "ticker": "MCD",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 299.8800048828125,
+    "last_close": 231.8300018310547,
+    "period_high": 341.75,
+    "period_low": 229.61000061035156,
+    "pct_change": -22.69
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 248.27000427246094,
+     "high": 250.4499969482422,
+     "low": 247.64999389648438,
+     "close": 248.24000549316406,
+     "volume": 9577400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 249.41000366210938,
+     "high": 250.3800048828125,
+     "low": 246.52000427246094,
+     "close": 247.8800048828125,
+     "volume": 6334600
+    },
+    {
+     "date": "2026-09-22",
+     "open": 250.67999267578125,
+     "high": 252.05999755859375,
+     "low": 249.3699951171875,
+     "close": 250.35000610351562,
+     "volume": 5016800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 250.2899932861328,
+     "high": 250.32000732421875,
+     "low": 234.02999877929688,
+     "close": 238.32000732421875,
+     "volume": 16605700
+    },
+    {
+     "date": "2026-09-24",
+     "open": 239.6999969482422,
+     "high": 242.55999755859375,
+     "low": 237.02000427246094,
+     "close": 237.02000427246094,
+     "volume": 7387500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "MCD|3mo": {
+   "ticker": "MCD",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 280.6300048828125,
+    "last_close": 231.8300018310547,
+    "period_high": 287.1000061035156,
+    "period_low": 229.61000061035156,
+    "pct_change": -17.39
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 248.27000427246094,
+     "high": 250.4499969482422,
+     "low": 247.64999389648438,
+     "close": 248.24000549316406,
+     "volume": 9577400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 249.41000366210938,
+     "high": 250.3800048828125,
+     "low": 246.52000427246094,
+     "close": 247.8800048828125,
+     "volume": 6334600
+    },
+    {
+     "date": "2026-09-22",
+     "open": 250.67999267578125,
+     "high": 252.05999755859375,
+     "low": 249.3699951171875,
+     "close": 250.35000610351562,
+     "volume": 5016800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 250.2899932861328,
+     "high": 250.32000732421875,
+     "low": 234.02999877929688,
+     "close": 238.32000732421875,
+     "volume": 16605700
+    },
+    {
+     "date": "2026-09-24",
+     "open": 239.6999969482422,
+     "high": 242.55999755859375,
+     "low": 237.02000427246094,
+     "close": 237.02000427246094,
+     "volume": 7387500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "MCD|5d": {
+   "ticker": "MCD",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 236.5,
+    "last_close": 231.8300018310547,
+    "period_high": 238.0,
+    "period_low": 229.61000061035156,
+    "pct_change": -1.97
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "MCD|5y": {
+   "ticker": "MCD",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 243.0800018310547,
+    "last_close": 231.8300018310547,
+    "period_high": 341.75,
+    "period_low": 217.67999267578125,
+    "pct_change": -4.63
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 248.27000427246094,
+     "high": 250.4499969482422,
+     "low": 247.64999389648438,
+     "close": 248.24000549316406,
+     "volume": 9577400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 249.41000366210938,
+     "high": 250.3800048828125,
+     "low": 246.52000427246094,
+     "close": 247.8800048828125,
+     "volume": 6334600
+    },
+    {
+     "date": "2026-09-22",
+     "open": 250.67999267578125,
+     "high": 252.05999755859375,
+     "low": 249.3699951171875,
+     "close": 250.35000610351562,
+     "volume": 5016800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 250.2899932861328,
+     "high": 250.32000732421875,
+     "low": 234.02999877929688,
+     "close": 238.32000732421875,
+     "volume": 16605700
+    },
+    {
+     "date": "2026-09-24",
+     "open": 239.6999969482422,
+     "high": 242.55999755859375,
+     "low": 237.02000427246094,
+     "close": 237.02000427246094,
+     "volume": 7387500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "MCD|6mo": {
+   "ticker": "MCD",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 307.1400146484375,
+    "last_close": 231.8300018310547,
+    "period_high": 312.5400085449219,
+    "period_low": 229.61000061035156,
+    "pct_change": -24.52
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 248.27000427246094,
+     "high": 250.4499969482422,
+     "low": 247.64999389648438,
+     "close": 248.24000549316406,
+     "volume": 9577400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 249.41000366210938,
+     "high": 250.3800048828125,
+     "low": 246.52000427246094,
+     "close": 247.8800048828125,
+     "volume": 6334600
+    },
+    {
+     "date": "2026-09-22",
+     "open": 250.67999267578125,
+     "high": 252.05999755859375,
+     "low": 249.3699951171875,
+     "close": 250.35000610351562,
+     "volume": 5016800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 250.2899932861328,
+     "high": 250.32000732421875,
+     "low": 234.02999877929688,
+     "close": 238.32000732421875,
+     "volume": 16605700
+    },
+    {
+     "date": "2026-09-24",
+     "open": 239.6999969482422,
+     "high": 242.55999755859375,
+     "low": 237.02000427246094,
+     "close": 237.02000427246094,
+     "volume": 7387500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 236.77999877929688,
+     "high": 238.0,
+     "low": 235.2899932861328,
+     "close": 236.5,
+     "volume": 6530000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 235.74000549316406,
+     "high": 237.47999572753906,
+     "low": 233.22999572753906,
+     "close": 233.60000610351562,
+     "volume": 5365000
+    },
+    {
+     "date": "2026-09-29",
+     "open": 232.1999969482422,
+     "high": 236.00999450683594,
+     "low": 232.05999755859375,
+     "close": 233.97999572753906,
+     "volume": 5239500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 234.22999572753906,
+     "high": 234.97000122070312,
+     "low": 230.8800048828125,
+     "close": 230.94000244140625,
+     "volume": 5575900
+    },
+    {
+     "date": "2026-10-01",
+     "open": 231.5399932861328,
+     "high": 232.83999633789062,
+     "low": 229.61000061035156,
+     "close": 231.8300018310547,
+     "volume": 5925700
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "NKE|1d": {
+   "ticker": "NKE",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 35.150001525878906,
+    "last_close": 35.150001525878906,
+    "period_high": 36.2400016784668,
+    "period_low": 35.02000045776367,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "NKE|1mo": {
+   "ticker": "NKE",
+   "period": "1mo",
+   "num_points_total": 22,
+   "summary": {
+    "first_close": null,
+    "last_close": 35.150001525878906,
+    "period_high": 38.93000030517578,
+    "period_low": 35.02000045776367,
+    "pct_change": null
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 36.27000045776367,
+     "high": 36.68000030517578,
+     "low": 35.5,
+     "close": 35.5099983215332,
+     "volume": 52053600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 35.52000045776367,
+     "high": 36.36000061035156,
+     "low": 35.349998474121094,
+     "close": 36.099998474121094,
+     "volume": 42128800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 36.95000076293945,
+     "high": 37.040000915527344,
+     "low": 35.939998626708984,
+     "close": 36.099998474121094,
+     "volume": 31524800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 36.41999816894531,
+     "high": 36.619998931884766,
+     "low": 35.61000061035156,
+     "close": 36.04999923706055,
+     "volume": 40581400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 36.0,
+     "high": 36.13999938964844,
+     "low": 35.52000045776367,
+     "close": 35.9900016784668,
+     "volume": 39238500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 22 trading days."
+  },
+  "NKE|1y": {
+   "ticker": "NKE",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 74.56999969482422,
+    "last_close": 35.150001525878906,
+    "period_high": 76.97000122070312,
+    "period_low": 35.02000045776367,
+    "pct_change": -52.86
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 36.27000045776367,
+     "high": 36.68000030517578,
+     "low": 35.5,
+     "close": 35.5099983215332,
+     "volume": 52053600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 35.52000045776367,
+     "high": 36.36000061035156,
+     "low": 35.349998474121094,
+     "close": 36.099998474121094,
+     "volume": 42128800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 36.95000076293945,
+     "high": 37.040000915527344,
+     "low": 35.939998626708984,
+     "close": 36.099998474121094,
+     "volume": 31524800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 36.41999816894531,
+     "high": 36.619998931884766,
+     "low": 35.61000061035156,
+     "close": 36.04999923706055,
+     "volume": 40581400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 36.0,
+     "high": 36.13999938964844,
+     "low": 35.52000045776367,
+     "close": 35.9900016784668,
+     "volume": 39238500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "NKE|3mo": {
+   "ticker": "NKE",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 44.09000015258789,
+    "last_close": 35.150001525878906,
+    "period_high": 45.040000915527344,
+    "period_low": 35.02000045776367,
+    "pct_change": -20.28
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 36.27000045776367,
+     "high": 36.68000030517578,
+     "low": 35.5,
+     "close": 35.5099983215332,
+     "volume": 52053600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 35.52000045776367,
+     "high": 36.36000061035156,
+     "low": 35.349998474121094,
+     "close": 36.099998474121094,
+     "volume": 42128800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 36.95000076293945,
+     "high": 37.040000915527344,
+     "low": 35.939998626708984,
+     "close": 36.099998474121094,
+     "volume": 31524800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 36.41999816894531,
+     "high": 36.619998931884766,
+     "low": 35.61000061035156,
+     "close": 36.04999923706055,
+     "volume": 40581400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 36.0,
+     "high": 36.13999938964844,
+     "low": 35.52000045776367,
+     "close": 35.9900016784668,
+     "volume": 39238500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "NKE|5d": {
+   "ticker": "NKE",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 35.75,
+    "last_close": 35.150001525878906,
+    "period_high": 36.66999816894531,
+    "period_low": 35.02000045776367,
+    "pct_change": -1.68
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "NKE|5y": {
+   "ticker": "NKE",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 147.13999938964844,
+    "last_close": 35.150001525878906,
+    "period_high": 179.10000610351562,
+    "period_low": 35.02000045776367,
+    "pct_change": -76.11
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 36.27000045776367,
+     "high": 36.68000030517578,
+     "low": 35.5,
+     "close": 35.5099983215332,
+     "volume": 52053600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 35.52000045776367,
+     "high": 36.36000061035156,
+     "low": 35.349998474121094,
+     "close": 36.099998474121094,
+     "volume": 42128800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 36.95000076293945,
+     "high": 37.040000915527344,
+     "low": 35.939998626708984,
+     "close": 36.099998474121094,
+     "volume": 31524800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 36.41999816894531,
+     "high": 36.619998931884766,
+     "low": 35.61000061035156,
+     "close": 36.04999923706055,
+     "volume": 40581400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 36.0,
+     "high": 36.13999938964844,
+     "low": 35.52000045776367,
+     "close": 35.9900016784668,
+     "volume": 39238500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "NKE|6mo": {
+   "ticker": "NKE",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 44.189998626708984,
+    "last_close": 35.150001525878906,
+    "period_high": 47.650001525878906,
+    "period_low": 35.02000045776367,
+    "pct_change": -20.46
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 36.27000045776367,
+     "high": 36.68000030517578,
+     "low": 35.5,
+     "close": 35.5099983215332,
+     "volume": 52053600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 35.52000045776367,
+     "high": 36.36000061035156,
+     "low": 35.349998474121094,
+     "close": 36.099998474121094,
+     "volume": 42128800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 36.95000076293945,
+     "high": 37.040000915527344,
+     "low": 35.939998626708984,
+     "close": 36.099998474121094,
+     "volume": 31524800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 36.41999816894531,
+     "high": 36.619998931884766,
+     "low": 35.61000061035156,
+     "close": 36.04999923706055,
+     "volume": 40581400
+    },
+    {
+     "date": "2026-09-24",
+     "open": 36.0,
+     "high": 36.13999938964844,
+     "low": 35.52000045776367,
+     "close": 35.9900016784668,
+     "volume": 39238500
+    },
+    {
+     "date": "2026-09-25",
+     "open": 35.25,
+     "high": 36.18000030517578,
+     "low": 35.220001220703125,
+     "close": 35.75,
+     "volume": 38246000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 35.459999084472656,
+     "high": 36.66999816894531,
+     "low": 35.40999984741211,
+     "close": 36.38999938964844,
+     "volume": 34518600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 36.34000015258789,
+     "high": 36.43000030517578,
+     "low": 35.66999816894531,
+     "close": 35.84000015258789,
+     "volume": 28960000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 35.7400016784668,
+     "high": 35.9900016784668,
+     "low": 35.15999984741211,
+     "close": 35.400001525878906,
+     "volume": 38151700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 35.45000076293945,
+     "high": 36.2400016784668,
+     "low": 35.02000045776367,
+     "close": 35.150001525878906,
+     "volume": 105143400
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "INTC|1d": {
+   "ticker": "INTC",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 120.0,
+    "last_close": 120.0,
+    "period_high": 122.1500015258789,
+    "period_low": 117.3499984741211,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "INTC|1mo": {
+   "ticker": "INTC",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 90.05000305175781,
+    "last_close": 120.0,
+    "period_high": 127.44000244140625,
+    "period_low": 87.5,
+    "pct_change": 33.26
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 109.80000305175781,
+     "high": 110.48999786376953,
+     "low": 106.4000015258789,
+     "close": 108.5999984741211,
+     "volume": 174996700
+    },
+    {
+     "date": "2026-09-21",
+     "open": 116.52999877929688,
+     "high": 124.7300033569336,
+     "low": 114.93000030517578,
+     "close": 121.77999877929688,
+     "volume": 191638400
+    },
+    {
+     "date": "2026-09-22",
+     "open": 120.1500015258789,
+     "high": 124.08999633789062,
+     "low": 120.08000183105469,
+     "close": 123.86000061035156,
+     "volume": 108379400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 123.87000274658203,
+     "high": 124.25,
+     "low": 119.44000244140625,
+     "close": 122.5999984741211,
+     "volume": 85621100
+    },
+    {
+     "date": "2026-09-24",
+     "open": 120.61000061035156,
+     "high": 127.44000244140625,
+     "low": 119.55000305175781,
+     "close": 127.38999938964844,
+     "volume": 119296700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "INTC|1y": {
+   "ticker": "INTC",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 37.29999923706055,
+    "last_close": 120.0,
+    "period_high": 142.35000610351562,
+    "period_low": 32.88999938964844,
+    "pct_change": 221.72
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 109.80000305175781,
+     "high": 110.48999786376953,
+     "low": 106.4000015258789,
+     "close": 108.5999984741211,
+     "volume": 174996700
+    },
+    {
+     "date": "2026-09-21",
+     "open": 116.52999877929688,
+     "high": 124.7300033569336,
+     "low": 114.93000030517578,
+     "close": 121.77999877929688,
+     "volume": 191638400
+    },
+    {
+     "date": "2026-09-22",
+     "open": 120.1500015258789,
+     "high": 124.08999633789062,
+     "low": 120.08000183105469,
+     "close": 123.86000061035156,
+     "volume": 108379400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 123.87000274658203,
+     "high": 124.25,
+     "low": 119.44000244140625,
+     "close": 122.5999984741211,
+     "volume": 85621100
+    },
+    {
+     "date": "2026-09-24",
+     "open": 120.61000061035156,
+     "high": 127.44000244140625,
+     "low": 119.55000305175781,
+     "close": 127.38999938964844,
+     "volume": 119296700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "INTC|3mo": {
+   "ticker": "INTC",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 120.3499984741211,
+    "last_close": 120.0,
+    "period_high": 130.74000549316406,
+    "period_low": 81.79000091552734,
+    "pct_change": -0.29
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 109.80000305175781,
+     "high": 110.48999786376953,
+     "low": 106.4000015258789,
+     "close": 108.5999984741211,
+     "volume": 174996700
+    },
+    {
+     "date": "2026-09-21",
+     "open": 116.52999877929688,
+     "high": 124.7300033569336,
+     "low": 114.93000030517578,
+     "close": 121.77999877929688,
+     "volume": 191638400
+    },
+    {
+     "date": "2026-09-22",
+     "open": 120.1500015258789,
+     "high": 124.08999633789062,
+     "low": 120.08000183105469,
+     "close": 123.86000061035156,
+     "volume": 108379400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 123.87000274658203,
+     "high": 124.25,
+     "low": 119.44000244140625,
+     "close": 122.5999984741211,
+     "volume": 85621100
+    },
+    {
+     "date": "2026-09-24",
+     "open": 120.61000061035156,
+     "high": 127.44000244140625,
+     "low": 119.55000305175781,
+     "close": 127.38999938964844,
+     "volume": 119296700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "INTC|5d": {
+   "ticker": "INTC",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 123.0,
+    "last_close": 120.0,
+    "period_high": 126.93000030517578,
+    "period_low": 113.97000122070312,
+    "pct_change": -2.44
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "INTC|5y": {
+   "ticker": "INTC",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 53.470001220703125,
+    "last_close": 120.0,
+    "period_high": 142.35000610351562,
+    "period_low": 17.670000076293945,
+    "pct_change": 124.42
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 109.80000305175781,
+     "high": 110.48999786376953,
+     "low": 106.4000015258789,
+     "close": 108.5999984741211,
+     "volume": 174996700
+    },
+    {
+     "date": "2026-09-21",
+     "open": 116.52999877929688,
+     "high": 124.7300033569336,
+     "low": 114.93000030517578,
+     "close": 121.77999877929688,
+     "volume": 191638400
+    },
+    {
+     "date": "2026-09-22",
+     "open": 120.1500015258789,
+     "high": 124.08999633789062,
+     "low": 120.08000183105469,
+     "close": 123.86000061035156,
+     "volume": 108379400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 123.87000274658203,
+     "high": 124.25,
+     "low": 119.44000244140625,
+     "close": 122.5999984741211,
+     "volume": 85621100
+    },
+    {
+     "date": "2026-09-24",
+     "open": 120.61000061035156,
+     "high": 127.44000244140625,
+     "low": 119.55000305175781,
+     "close": 127.38999938964844,
+     "volume": 119296700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "INTC|6mo": {
+   "ticker": "INTC",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 50.380001068115234,
+    "last_close": 120.0,
+    "period_high": 142.35000610351562,
+    "period_low": 46.040000915527344,
+    "pct_change": 138.19
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 109.80000305175781,
+     "high": 110.48999786376953,
+     "low": 106.4000015258789,
+     "close": 108.5999984741211,
+     "volume": 174996700
+    },
+    {
+     "date": "2026-09-21",
+     "open": 116.52999877929688,
+     "high": 124.7300033569336,
+     "low": 114.93000030517578,
+     "close": 121.77999877929688,
+     "volume": 191638400
+    },
+    {
+     "date": "2026-09-22",
+     "open": 120.1500015258789,
+     "high": 124.08999633789062,
+     "low": 120.08000183105469,
+     "close": 123.86000061035156,
+     "volume": 108379400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 123.87000274658203,
+     "high": 124.25,
+     "low": 119.44000244140625,
+     "close": 122.5999984741211,
+     "volume": 85621100
+    },
+    {
+     "date": "2026-09-24",
+     "open": 120.61000061035156,
+     "high": 127.44000244140625,
+     "low": 119.55000305175781,
+     "close": 127.38999938964844,
+     "volume": 119296700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 126.83000183105469,
+     "high": 126.93000030517578,
+     "low": 122.83999633789062,
+     "close": 123.0,
+     "volume": 97728400
+    },
+    {
+     "date": "2026-09-28",
+     "open": 120.68000030517578,
+     "high": 121.70999908447266,
+     "low": 114.70999908447266,
+     "close": 116.02999877929688,
+     "volume": 112436900
+    },
+    {
+     "date": "2026-09-29",
+     "open": 116.69999694824219,
+     "high": 118.75,
+     "low": 113.97000122070312,
+     "close": 115.93000030517578,
+     "volume": 88744500
+    },
+    {
+     "date": "2026-09-30",
+     "open": 116.22000122070312,
+     "high": 120.55000305175781,
+     "low": 116.0,
+     "close": 120.2300033569336,
+     "volume": 94917200
+    },
+    {
+     "date": "2026-10-01",
+     "open": 118.7300033569336,
+     "high": 122.1500015258789,
+     "low": 117.3499984741211,
+     "close": 120.0,
+     "volume": 103335500
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "CSCO|1d": {
+   "ticker": "CSCO",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 108.76000213623047,
+    "last_close": 108.76000213623047,
+    "period_high": 109.08000183105469,
+    "period_low": 106.91999816894531,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "CSCO|1mo": {
+   "ticker": "CSCO",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 109.45999908447266,
+    "last_close": 108.76000213623047,
+    "period_high": 112.22000122070312,
+    "period_low": 104.51000213623047,
+    "pct_change": -0.64
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 110.3499984741211,
+     "high": 110.80999755859375,
+     "low": 108.08999633789062,
+     "close": 109.51000213623047,
+     "volume": 41295900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 109.80999755859375,
+     "high": 111.5,
+     "low": 108.83000183105469,
+     "close": 111.45999908447266,
+     "volume": 21567200
+    },
+    {
+     "date": "2026-09-22",
+     "open": 110.27999877929688,
+     "high": 110.43000030517578,
+     "low": 104.51000213623047,
+     "close": 106.44000244140625,
+     "volume": 32892700
+    },
+    {
+     "date": "2026-09-23",
+     "open": 106.22000122070312,
+     "high": 106.87999725341797,
+     "low": 105.91000366210938,
+     "close": 106.43000030517578,
+     "volume": 17630900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 105.6500015258789,
+     "high": 107.05999755859375,
+     "low": 105.05999755859375,
+     "close": 106.97000122070312,
+     "volume": 32360400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "CSCO|1y": {
+   "ticker": "CSCO",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 68.30999755859375,
+    "last_close": 108.76000213623047,
+    "period_high": 130.3699951171875,
+    "period_low": 66.80999755859375,
+    "pct_change": 59.22
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 110.3499984741211,
+     "high": 110.80999755859375,
+     "low": 108.08999633789062,
+     "close": 109.51000213623047,
+     "volume": 41295900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 109.80999755859375,
+     "high": 111.5,
+     "low": 108.83000183105469,
+     "close": 111.45999908447266,
+     "volume": 21567200
+    },
+    {
+     "date": "2026-09-22",
+     "open": 110.27999877929688,
+     "high": 110.43000030517578,
+     "low": 104.51000213623047,
+     "close": 106.44000244140625,
+     "volume": 32892700
+    },
+    {
+     "date": "2026-09-23",
+     "open": 106.22000122070312,
+     "high": 106.87999725341797,
+     "low": 105.91000366210938,
+     "close": 106.43000030517578,
+     "volume": 17630900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 105.6500015258789,
+     "high": 107.05999755859375,
+     "low": 105.05999755859375,
+     "close": 106.97000122070312,
+     "volume": 32360400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "CSCO|3mo": {
+   "ticker": "CSCO",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 112.69000244140625,
+    "last_close": 108.76000213623047,
+    "period_high": 124.70999908447266,
+    "period_low": 104.51000213623047,
+    "pct_change": -3.49
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 110.3499984741211,
+     "high": 110.80999755859375,
+     "low": 108.08999633789062,
+     "close": 109.51000213623047,
+     "volume": 41295900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 109.80999755859375,
+     "high": 111.5,
+     "low": 108.83000183105469,
+     "close": 111.45999908447266,
+     "volume": 21567200
+    },
+    {
+     "date": "2026-09-22",
+     "open": 110.27999877929688,
+     "high": 110.43000030517578,
+     "low": 104.51000213623047,
+     "close": 106.44000244140625,
+     "volume": 32892700
+    },
+    {
+     "date": "2026-09-23",
+     "open": 106.22000122070312,
+     "high": 106.87999725341797,
+     "low": 105.91000366210938,
+     "close": 106.43000030517578,
+     "volume": 17630900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 105.6500015258789,
+     "high": 107.05999755859375,
+     "low": 105.05999755859375,
+     "close": 106.97000122070312,
+     "volume": 32360400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "CSCO|5d": {
+   "ticker": "CSCO",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 106.69999694824219,
+    "last_close": 108.76000213623047,
+    "period_high": 109.08000183105469,
+    "period_low": 105.9800033569336,
+    "pct_change": 1.93
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "CSCO|5y": {
+   "ticker": "CSCO",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 54.22999954223633,
+    "last_close": 108.76000213623047,
+    "period_high": 130.3699951171875,
+    "period_low": 38.599998474121094,
+    "pct_change": 100.55
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 110.3499984741211,
+     "high": 110.80999755859375,
+     "low": 108.08999633789062,
+     "close": 109.51000213623047,
+     "volume": 41295900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 109.80999755859375,
+     "high": 111.5,
+     "low": 108.83000183105469,
+     "close": 111.45999908447266,
+     "volume": 21567200
+    },
+    {
+     "date": "2026-09-22",
+     "open": 110.27999877929688,
+     "high": 110.43000030517578,
+     "low": 104.51000213623047,
+     "close": 106.44000244140625,
+     "volume": 32892700
+    },
+    {
+     "date": "2026-09-23",
+     "open": 106.22000122070312,
+     "high": 106.87999725341797,
+     "low": 105.91000366210938,
+     "close": 106.43000030517578,
+     "volume": 17630900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 105.6500015258789,
+     "high": 107.05999755859375,
+     "low": 105.05999755859375,
+     "close": 106.97000122070312,
+     "volume": 32360400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "CSCO|6mo": {
+   "ticker": "CSCO",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 79.0199966430664,
+    "last_close": 108.76000213623047,
+    "period_high": 130.3699951171875,
+    "period_low": 76.54000091552734,
+    "pct_change": 37.64
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 110.3499984741211,
+     "high": 110.80999755859375,
+     "low": 108.08999633789062,
+     "close": 109.51000213623047,
+     "volume": 41295900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 109.80999755859375,
+     "high": 111.5,
+     "low": 108.83000183105469,
+     "close": 111.45999908447266,
+     "volume": 21567200
+    },
+    {
+     "date": "2026-09-22",
+     "open": 110.27999877929688,
+     "high": 110.43000030517578,
+     "low": 104.51000213623047,
+     "close": 106.44000244140625,
+     "volume": 32892700
+    },
+    {
+     "date": "2026-09-23",
+     "open": 106.22000122070312,
+     "high": 106.87999725341797,
+     "low": 105.91000366210938,
+     "close": 106.43000030517578,
+     "volume": 17630900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 105.6500015258789,
+     "high": 107.05999755859375,
+     "low": 105.05999755859375,
+     "close": 106.97000122070312,
+     "volume": 32360400
+    },
+    {
+     "date": "2026-09-25",
+     "open": 106.98999786376953,
+     "high": 108.63999938964844,
+     "low": 106.52999877929688,
+     "close": 106.69999694824219,
+     "volume": 19950000
+    },
+    {
+     "date": "2026-09-28",
+     "open": 106.5199966430664,
+     "high": 107.68000030517578,
+     "low": 105.9800033569336,
+     "close": 106.73999786376953,
+     "volume": 19356400
+    },
+    {
+     "date": "2026-09-29",
+     "open": 107.2699966430664,
+     "high": 107.4000015258789,
+     "low": 106.05999755859375,
+     "close": 106.94000244140625,
+     "volume": 11743600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 107.02999877929688,
+     "high": 108.66999816894531,
+     "low": 107.0199966430664,
+     "close": 107.62999725341797,
+     "volume": 17001600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 108.04000091552734,
+     "high": 109.08000183105469,
+     "low": 106.91999816894531,
+     "close": 108.76000213623047,
+     "volume": 12746200
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "PFE|1d": {
+   "ticker": "PFE",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 28.1200008392334,
+    "last_close": 28.1200008392334,
+    "period_high": 28.59000015258789,
+    "period_low": 28.079999923706055,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "PFE|1mo": {
+   "ticker": "PFE",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 29.020000457763672,
+    "last_close": 28.1200008392334,
+    "period_high": 29.209999084472656,
+    "period_low": 27.25,
+    "pct_change": -3.1
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 27.639999389648438,
+     "high": 27.65999984741211,
+     "low": 27.34000015258789,
+     "close": 27.65999984741211,
+     "volume": 75593400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 27.649999618530273,
+     "high": 27.920000076293945,
+     "low": 27.530000686645508,
+     "close": 27.739999771118164,
+     "volume": 28769800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 27.739999771118164,
+     "high": 28.0,
+     "low": 27.489999771118164,
+     "close": 27.93000030517578,
+     "volume": 26663500
+    },
+    {
+     "date": "2026-09-23",
+     "open": 27.959999084472656,
+     "high": 28.229999542236328,
+     "low": 27.84000015258789,
+     "close": 28.18000030517578,
+     "volume": 33812900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 28.200000762939453,
+     "high": 28.850000381469727,
+     "low": 28.200000762939453,
+     "close": 28.40999984741211,
+     "volume": 34774700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "PFE|1y": {
+   "ticker": "PFE",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 27.079999923706055,
+    "last_close": 28.1200008392334,
+    "period_high": 29.209999084472656,
+    "period_low": 23.6200008392334,
+    "pct_change": 3.84
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 27.639999389648438,
+     "high": 27.65999984741211,
+     "low": 27.34000015258789,
+     "close": 27.65999984741211,
+     "volume": 75593400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 27.649999618530273,
+     "high": 27.920000076293945,
+     "low": 27.530000686645508,
+     "close": 27.739999771118164,
+     "volume": 28769800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 27.739999771118164,
+     "high": 28.0,
+     "low": 27.489999771118164,
+     "close": 27.93000030517578,
+     "volume": 26663500
+    },
+    {
+     "date": "2026-09-23",
+     "open": 27.959999084472656,
+     "high": 28.229999542236328,
+     "low": 27.84000015258789,
+     "close": 28.18000030517578,
+     "volume": 33812900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 28.200000762939453,
+     "high": 28.850000381469727,
+     "low": 28.200000762939453,
+     "close": 28.40999984741211,
+     "volume": 34774700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "PFE|3mo": {
+   "ticker": "PFE",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 24.31999969482422,
+    "last_close": 28.1200008392334,
+    "period_high": 29.209999084472656,
+    "period_low": 23.6200008392334,
+    "pct_change": 15.63
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 27.639999389648438,
+     "high": 27.65999984741211,
+     "low": 27.34000015258789,
+     "close": 27.65999984741211,
+     "volume": 75593400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 27.649999618530273,
+     "high": 27.920000076293945,
+     "low": 27.530000686645508,
+     "close": 27.739999771118164,
+     "volume": 28769800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 27.739999771118164,
+     "high": 28.0,
+     "low": 27.489999771118164,
+     "close": 27.93000030517578,
+     "volume": 26663500
+    },
+    {
+     "date": "2026-09-23",
+     "open": 27.959999084472656,
+     "high": 28.229999542236328,
+     "low": 27.84000015258789,
+     "close": 28.18000030517578,
+     "volume": 33812900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 28.200000762939453,
+     "high": 28.850000381469727,
+     "low": 28.200000762939453,
+     "close": 28.40999984741211,
+     "volume": 34774700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "PFE|5d": {
+   "ticker": "PFE",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 28.670000076293945,
+    "last_close": 28.1200008392334,
+    "period_high": 28.950000762939453,
+    "period_low": 28.079999923706055,
+    "pct_change": -1.92
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "PFE|5y": {
+   "ticker": "PFE",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 42.41999816894531,
+    "last_close": 28.1200008392334,
+    "period_high": 61.709999084472656,
+    "period_low": 20.920000076293945,
+    "pct_change": -33.71
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 27.639999389648438,
+     "high": 27.65999984741211,
+     "low": 27.34000015258789,
+     "close": 27.65999984741211,
+     "volume": 75593400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 27.649999618530273,
+     "high": 27.920000076293945,
+     "low": 27.530000686645508,
+     "close": 27.739999771118164,
+     "volume": 28769800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 27.739999771118164,
+     "high": 28.0,
+     "low": 27.489999771118164,
+     "close": 27.93000030517578,
+     "volume": 26663500
+    },
+    {
+     "date": "2026-09-23",
+     "open": 27.959999084472656,
+     "high": 28.229999542236328,
+     "low": 27.84000015258789,
+     "close": 28.18000030517578,
+     "volume": 33812900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 28.200000762939453,
+     "high": 28.850000381469727,
+     "low": 28.200000762939453,
+     "close": 28.40999984741211,
+     "volume": 34774700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "PFE|6mo": {
+   "ticker": "PFE",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 28.31999969482422,
+    "last_close": 28.1200008392334,
+    "period_high": 29.209999084472656,
+    "period_low": 23.6200008392334,
+    "pct_change": -0.71
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 27.639999389648438,
+     "high": 27.65999984741211,
+     "low": 27.34000015258789,
+     "close": 27.65999984741211,
+     "volume": 75593400
+    },
+    {
+     "date": "2026-09-21",
+     "open": 27.649999618530273,
+     "high": 27.920000076293945,
+     "low": 27.530000686645508,
+     "close": 27.739999771118164,
+     "volume": 28769800
+    },
+    {
+     "date": "2026-09-22",
+     "open": 27.739999771118164,
+     "high": 28.0,
+     "low": 27.489999771118164,
+     "close": 27.93000030517578,
+     "volume": 26663500
+    },
+    {
+     "date": "2026-09-23",
+     "open": 27.959999084472656,
+     "high": 28.229999542236328,
+     "low": 27.84000015258789,
+     "close": 28.18000030517578,
+     "volume": 33812900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 28.200000762939453,
+     "high": 28.850000381469727,
+     "low": 28.200000762939453,
+     "close": 28.40999984741211,
+     "volume": 34774700
+    },
+    {
+     "date": "2026-09-25",
+     "open": 28.450000762939453,
+     "high": 28.690000534057617,
+     "low": 28.170000076293945,
+     "close": 28.670000076293945,
+     "volume": 27755200
+    },
+    {
+     "date": "2026-09-28",
+     "open": 28.6200008392334,
+     "high": 28.8700008392334,
+     "low": 28.389999389648438,
+     "close": 28.719999313354492,
+     "volume": 24950500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 28.600000381469727,
+     "high": 28.760000228881836,
+     "low": 28.260000228881836,
+     "close": 28.719999313354492,
+     "volume": 33304600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 28.790000915527344,
+     "high": 28.950000762939453,
+     "low": 28.520000457763672,
+     "close": 28.520000457763672,
+     "volume": 33629100
+    },
+    {
+     "date": "2026-10-01",
+     "open": 28.450000762939453,
+     "high": 28.59000015258789,
+     "low": 28.079999923706055,
+     "close": 28.1200008392334,
+     "volume": 30479400
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "XOM|1d": {
+   "ticker": "XOM",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 163.82000732421875,
+    "last_close": 163.82000732421875,
+    "period_high": 164.0800018310547,
+    "period_low": 160.80999755859375,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "XOM|1mo": {
+   "ticker": "XOM",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 164.14999389648438,
+    "last_close": 163.82000732421875,
+    "period_high": 169.63999938964844,
+    "period_low": 155.85000610351562,
+    "pct_change": -0.2
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 162.5,
+     "high": 163.5399932861328,
+     "low": 161.30999755859375,
+     "close": 163.5399932861328,
+     "volume": 37640600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 160.9600067138672,
+     "high": 161.9499969482422,
+     "low": 157.94000244140625,
+     "close": 158.3000030517578,
+     "volume": 15752500
+    },
+    {
+     "date": "2026-09-22",
+     "open": 157.52999877929688,
+     "high": 159.97000122070312,
+     "low": 155.85000610351562,
+     "close": 158.7100067138672,
+     "volume": 14189400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 159.6199951171875,
+     "high": 162.1199951171875,
+     "low": 159.4199981689453,
+     "close": 161.22999572753906,
+     "volume": 12569300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 163.05999755859375,
+     "high": 164.91000366210938,
+     "low": 161.1999969482422,
+     "close": 162.13999938964844,
+     "volume": 12484900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "XOM|1y": {
+   "ticker": "XOM",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 111.29000091552734,
+    "last_close": 163.82000732421875,
+    "period_high": 176.41000366210938,
+    "period_low": 110.38999938964844,
+    "pct_change": 47.2
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 162.5,
+     "high": 163.5399932861328,
+     "low": 161.30999755859375,
+     "close": 163.5399932861328,
+     "volume": 37640600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 160.9600067138672,
+     "high": 161.9499969482422,
+     "low": 157.94000244140625,
+     "close": 158.3000030517578,
+     "volume": 15752500
+    },
+    {
+     "date": "2026-09-22",
+     "open": 157.52999877929688,
+     "high": 159.97000122070312,
+     "low": 155.85000610351562,
+     "close": 158.7100067138672,
+     "volume": 14189400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 159.6199951171875,
+     "high": 162.1199951171875,
+     "low": 159.4199981689453,
+     "close": 161.22999572753906,
+     "volume": 12569300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 163.05999755859375,
+     "high": 164.91000366210938,
+     "low": 161.1999969482422,
+     "close": 162.13999938964844,
+     "volume": 12484900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "XOM|3mo": {
+   "ticker": "XOM",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 137.08999633789062,
+    "last_close": 163.82000732421875,
+    "period_high": 169.63999938964844,
+    "period_low": 136.00999450683594,
+    "pct_change": 19.5
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 162.5,
+     "high": 163.5399932861328,
+     "low": 161.30999755859375,
+     "close": 163.5399932861328,
+     "volume": 37640600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 160.9600067138672,
+     "high": 161.9499969482422,
+     "low": 157.94000244140625,
+     "close": 158.3000030517578,
+     "volume": 15752500
+    },
+    {
+     "date": "2026-09-22",
+     "open": 157.52999877929688,
+     "high": 159.97000122070312,
+     "low": 155.85000610351562,
+     "close": 158.7100067138672,
+     "volume": 14189400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 159.6199951171875,
+     "high": 162.1199951171875,
+     "low": 159.4199981689453,
+     "close": 161.22999572753906,
+     "volume": 12569300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 163.05999755859375,
+     "high": 164.91000366210938,
+     "low": 161.1999969482422,
+     "close": 162.13999938964844,
+     "volume": 12484900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "XOM|5d": {
+   "ticker": "XOM",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 160.58999633789062,
+    "last_close": 163.82000732421875,
+    "period_high": 164.3699951171875,
+    "period_low": 159.27000427246094,
+    "pct_change": 2.01
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "XOM|5y": {
+   "ticker": "XOM",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 61.720001220703125,
+    "last_close": 163.82000732421875,
+    "period_high": 176.41000366210938,
+    "period_low": 57.959999084472656,
+    "pct_change": 165.42
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 162.5,
+     "high": 163.5399932861328,
+     "low": 161.30999755859375,
+     "close": 163.5399932861328,
+     "volume": 37640600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 160.9600067138672,
+     "high": 161.9499969482422,
+     "low": 157.94000244140625,
+     "close": 158.3000030517578,
+     "volume": 15752500
+    },
+    {
+     "date": "2026-09-22",
+     "open": 157.52999877929688,
+     "high": 159.97000122070312,
+     "low": 155.85000610351562,
+     "close": 158.7100067138672,
+     "volume": 14189400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 159.6199951171875,
+     "high": 162.1199951171875,
+     "low": 159.4199981689453,
+     "close": 161.22999572753906,
+     "volume": 12569300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 163.05999755859375,
+     "high": 164.91000366210938,
+     "low": 161.1999969482422,
+     "close": 162.13999938964844,
+     "volume": 12484900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "XOM|6mo": {
+   "ticker": "XOM",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 160.69000244140625,
+    "last_close": 163.82000732421875,
+    "period_high": 169.63999938964844,
+    "period_low": 134.9499969482422,
+    "pct_change": 1.95
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 162.5,
+     "high": 163.5399932861328,
+     "low": 161.30999755859375,
+     "close": 163.5399932861328,
+     "volume": 37640600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 160.9600067138672,
+     "high": 161.9499969482422,
+     "low": 157.94000244140625,
+     "close": 158.3000030517578,
+     "volume": 15752500
+    },
+    {
+     "date": "2026-09-22",
+     "open": 157.52999877929688,
+     "high": 159.97000122070312,
+     "low": 155.85000610351562,
+     "close": 158.7100067138672,
+     "volume": 14189400
+    },
+    {
+     "date": "2026-09-23",
+     "open": 159.6199951171875,
+     "high": 162.1199951171875,
+     "low": 159.4199981689453,
+     "close": 161.22999572753906,
+     "volume": 12569300
+    },
+    {
+     "date": "2026-09-24",
+     "open": 163.05999755859375,
+     "high": 164.91000366210938,
+     "low": 161.1999969482422,
+     "close": 162.13999938964844,
+     "volume": 12484900
+    },
+    {
+     "date": "2026-09-25",
+     "open": 160.22999572753906,
+     "high": 161.7899932861328,
+     "low": 159.77999877929688,
+     "close": 160.58999633789062,
+     "volume": 10996700
+    },
+    {
+     "date": "2026-09-28",
+     "open": 162.8000030517578,
+     "high": 163.5399932861328,
+     "low": 161.0500030517578,
+     "close": 162.52000427246094,
+     "volume": 12809500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 160.22000122070312,
+     "high": 161.97000122070312,
+     "low": 159.27000427246094,
+     "close": 161.35000610351562,
+     "volume": 9160000
+    },
+    {
+     "date": "2026-09-30",
+     "open": 162.22999572753906,
+     "high": 164.3699951171875,
+     "low": 161.8000030517578,
+     "close": 162.75,
+     "volume": 13100400
+    },
+    {
+     "date": "2026-10-01",
+     "open": 161.5,
+     "high": 164.0800018310547,
+     "low": 160.80999755859375,
+     "close": 163.82000732421875,
+     "volume": 11703100
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "BAC|1d": {
+   "ticker": "BAC",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 53.72999954223633,
+    "last_close": 53.72999954223633,
+    "period_high": 54.34000015258789,
+    "period_low": 52.88999938964844,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "BAC|1mo": {
+   "ticker": "BAC",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 62.599998474121094,
+    "last_close": 53.72999954223633,
+    "period_high": 63.83000183105469,
+    "period_low": 52.88999938964844,
+    "pct_change": -14.17
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 57.52000045776367,
+     "high": 58.22999954223633,
+     "low": 57.52000045776367,
+     "close": 57.72999954223633,
+     "volume": 52483900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 58.04999923706055,
+     "high": 58.279998779296875,
+     "low": 57.470001220703125,
+     "close": 57.959999084472656,
+     "volume": 33228100
+    },
+    {
+     "date": "2026-09-22",
+     "open": 58.099998474121094,
+     "high": 58.119998931884766,
+     "low": 56.06999969482422,
+     "close": 56.20000076293945,
+     "volume": 45137800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 55.91999816894531,
+     "high": 56.47999954223633,
+     "low": 55.7400016784668,
+     "close": 56.0,
+     "volume": 36727800
+    },
+    {
+     "date": "2026-09-24",
+     "open": 56.38999938964844,
+     "high": 56.529998779296875,
+     "low": 55.84000015258789,
+     "close": 56.029998779296875,
+     "volume": 40990300
+    },
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "BAC|1y": {
+   "ticker": "BAC",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 50.47999954223633,
+    "last_close": 53.72999954223633,
+    "period_high": 65.2300033569336,
+    "period_low": 46.119998931884766,
+    "pct_change": 6.44
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 57.52000045776367,
+     "high": 58.22999954223633,
+     "low": 57.52000045776367,
+     "close": 57.72999954223633,
+     "volume": 52483900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 58.04999923706055,
+     "high": 58.279998779296875,
+     "low": 57.470001220703125,
+     "close": 57.959999084472656,
+     "volume": 33228100
+    },
+    {
+     "date": "2026-09-22",
+     "open": 58.099998474121094,
+     "high": 58.119998931884766,
+     "low": 56.06999969482422,
+     "close": 56.20000076293945,
+     "volume": 45137800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 55.91999816894531,
+     "high": 56.47999954223633,
+     "low": 55.7400016784668,
+     "close": 56.0,
+     "volume": 36727800
+    },
+    {
+     "date": "2026-09-24",
+     "open": 56.38999938964844,
+     "high": 56.529998779296875,
+     "low": 55.84000015258789,
+     "close": 56.029998779296875,
+     "volume": 40990300
+    },
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "BAC|3mo": {
+   "ticker": "BAC",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 58.72999954223633,
+    "last_close": 53.72999954223633,
+    "period_high": 65.2300033569336,
+    "period_low": 52.88999938964844,
+    "pct_change": -8.51
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 57.52000045776367,
+     "high": 58.22999954223633,
+     "low": 57.52000045776367,
+     "close": 57.72999954223633,
+     "volume": 52483900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 58.04999923706055,
+     "high": 58.279998779296875,
+     "low": 57.470001220703125,
+     "close": 57.959999084472656,
+     "volume": 33228100
+    },
+    {
+     "date": "2026-09-22",
+     "open": 58.099998474121094,
+     "high": 58.119998931884766,
+     "low": 56.06999969482422,
+     "close": 56.20000076293945,
+     "volume": 45137800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 55.91999816894531,
+     "high": 56.47999954223633,
+     "low": 55.7400016784668,
+     "close": 56.0,
+     "volume": 36727800
+    },
+    {
+     "date": "2026-09-24",
+     "open": 56.38999938964844,
+     "high": 56.529998779296875,
+     "low": 55.84000015258789,
+     "close": 56.029998779296875,
+     "volume": 40990300
+    },
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "BAC|5d": {
+   "ticker": "BAC",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 56.70000076293945,
+    "last_close": 53.72999954223633,
+    "period_high": 56.75,
+    "period_low": 52.88999938964844,
+    "pct_change": -5.24
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "BAC|5y": {
+   "ticker": "BAC",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 43.34000015258789,
+    "last_close": 53.72999954223633,
+    "period_high": 65.2300033569336,
+    "period_low": 24.959999084472656,
+    "pct_change": 23.97
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 57.52000045776367,
+     "high": 58.22999954223633,
+     "low": 57.52000045776367,
+     "close": 57.72999954223633,
+     "volume": 52483900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 58.04999923706055,
+     "high": 58.279998779296875,
+     "low": 57.470001220703125,
+     "close": 57.959999084472656,
+     "volume": 33228100
+    },
+    {
+     "date": "2026-09-22",
+     "open": 58.099998474121094,
+     "high": 58.119998931884766,
+     "low": 56.06999969482422,
+     "close": 56.20000076293945,
+     "volume": 45137800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 55.91999816894531,
+     "high": 56.47999954223633,
+     "low": 55.7400016784668,
+     "close": 56.0,
+     "volume": 36727800
+    },
+    {
+     "date": "2026-09-24",
+     "open": 56.38999938964844,
+     "high": 56.529998779296875,
+     "low": 55.84000015258789,
+     "close": 56.029998779296875,
+     "volume": 40990300
+    },
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "BAC|6mo": {
+   "ticker": "BAC",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 49.380001068115234,
+    "last_close": 53.72999954223633,
+    "period_high": 65.2300033569336,
+    "period_low": 48.15999984741211,
+    "pct_change": 8.81
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 57.52000045776367,
+     "high": 58.22999954223633,
+     "low": 57.52000045776367,
+     "close": 57.72999954223633,
+     "volume": 52483900
+    },
+    {
+     "date": "2026-09-21",
+     "open": 58.04999923706055,
+     "high": 58.279998779296875,
+     "low": 57.470001220703125,
+     "close": 57.959999084472656,
+     "volume": 33228100
+    },
+    {
+     "date": "2026-09-22",
+     "open": 58.099998474121094,
+     "high": 58.119998931884766,
+     "low": 56.06999969482422,
+     "close": 56.20000076293945,
+     "volume": 45137800
+    },
+    {
+     "date": "2026-09-23",
+     "open": 55.91999816894531,
+     "high": 56.47999954223633,
+     "low": 55.7400016784668,
+     "close": 56.0,
+     "volume": 36727800
+    },
+    {
+     "date": "2026-09-24",
+     "open": 56.38999938964844,
+     "high": 56.529998779296875,
+     "low": 55.84000015258789,
+     "close": 56.029998779296875,
+     "volume": 40990300
+    },
+    {
+     "date": "2026-09-25",
+     "open": 56.310001373291016,
+     "high": 56.75,
+     "low": 55.869998931884766,
+     "close": 56.70000076293945,
+     "volume": 28601300
+    },
+    {
+     "date": "2026-09-28",
+     "open": 56.41999816894531,
+     "high": 56.66999816894531,
+     "low": 55.369998931884766,
+     "close": 55.470001220703125,
+     "volume": 29170500
+    },
+    {
+     "date": "2026-09-29",
+     "open": 55.400001525878906,
+     "high": 55.54999923706055,
+     "low": 54.72999954223633,
+     "close": 54.959999084472656,
+     "volume": 31666600
+    },
+    {
+     "date": "2026-09-30",
+     "open": 54.91999816894531,
+     "high": 55.11000061035156,
+     "low": 54.38999938964844,
+     "close": 54.43000030517578,
+     "volume": 34023700
+    },
+    {
+     "date": "2026-10-01",
+     "open": 53.90999984741211,
+     "high": 54.34000015258789,
+     "low": 52.88999938964844,
+     "close": 53.72999954223633,
+     "volume": 60026500
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
+  },
+  "HD|1d": {
+   "ticker": "HD",
+   "period": "1d",
+   "num_points_total": 1,
+   "summary": {
+    "first_close": 282.4599914550781,
+    "last_close": 282.4599914550781,
+    "period_high": 283.8500061035156,
+    "period_low": 277.1499938964844,
+    "pct_change": 0.0
+   },
+   "recent_records": [
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 1d period; recent_records shows the last 1 of 1 trading days."
+  },
+  "HD|1mo": {
+   "ticker": "HD",
+   "period": "1mo",
+   "num_points_total": 21,
+   "summary": {
+    "first_close": 318.510009765625,
+    "last_close": 282.4599914550781,
+    "period_high": 322.1700134277344,
+    "period_low": 277.1499938964844,
+    "pct_change": -11.32
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 298.67999267578125,
+     "high": 302.25,
+     "low": 298.25,
+     "close": 299.9800109863281,
+     "volume": 8191600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 301.0,
+     "high": 301.739990234375,
+     "low": 295.3900146484375,
+     "close": 297.20001220703125,
+     "volume": 5434300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 302.0899963378906,
+     "high": 306.30999755859375,
+     "low": 300.17999267578125,
+     "close": 305.3500061035156,
+     "volume": 5456100
+    },
+    {
+     "date": "2026-09-23",
+     "open": 303.42999267578125,
+     "high": 304.1300048828125,
+     "low": 296.6700134277344,
+     "close": 296.7200012207031,
+     "volume": 4684900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 296.0,
+     "high": 299.1000061035156,
+     "low": 291.07000732421875,
+     "close": 292.17999267578125,
+     "volume": 7053800
+    },
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 1mo period; recent_records shows the last 10 of 21 trading days."
+  },
+  "HD|1y": {
+   "ticker": "HD",
+   "period": "1y",
+   "num_points_total": 251,
+   "summary": {
+    "first_close": 395.010009765625,
+    "last_close": 282.4599914550781,
+    "period_high": 397.6300048828125,
+    "period_low": 277.1499938964844,
+    "pct_change": -28.49
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 298.67999267578125,
+     "high": 302.25,
+     "low": 298.25,
+     "close": 299.9800109863281,
+     "volume": 8191600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 301.0,
+     "high": 301.739990234375,
+     "low": 295.3900146484375,
+     "close": 297.20001220703125,
+     "volume": 5434300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 302.0899963378906,
+     "high": 306.30999755859375,
+     "low": 300.17999267578125,
+     "close": 305.3500061035156,
+     "volume": 5456100
+    },
+    {
+     "date": "2026-09-23",
+     "open": 303.42999267578125,
+     "high": 304.1300048828125,
+     "low": 296.6700134277344,
+     "close": 296.7200012207031,
+     "volume": 4684900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 296.0,
+     "high": 299.1000061035156,
+     "low": 291.07000732421875,
+     "close": 292.17999267578125,
+     "volume": 7053800
+    },
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 1y period; recent_records shows the last 10 of 251 trading days."
+  },
+  "HD|3mo": {
+   "ticker": "HD",
+   "period": "3mo",
+   "num_points_total": 64,
+   "summary": {
+    "first_close": 357.8999938964844,
+    "last_close": 282.4599914550781,
+    "period_high": 358.8500061035156,
+    "period_low": 277.1499938964844,
+    "pct_change": -21.08
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 298.67999267578125,
+     "high": 302.25,
+     "low": 298.25,
+     "close": 299.9800109863281,
+     "volume": 8191600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 301.0,
+     "high": 301.739990234375,
+     "low": 295.3900146484375,
+     "close": 297.20001220703125,
+     "volume": 5434300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 302.0899963378906,
+     "high": 306.30999755859375,
+     "low": 300.17999267578125,
+     "close": 305.3500061035156,
+     "volume": 5456100
+    },
+    {
+     "date": "2026-09-23",
+     "open": 303.42999267578125,
+     "high": 304.1300048828125,
+     "low": 296.6700134277344,
+     "close": 296.7200012207031,
+     "volume": 4684900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 296.0,
+     "high": 299.1000061035156,
+     "low": 291.07000732421875,
+     "close": 292.17999267578125,
+     "volume": 7053800
+    },
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 3mo period; recent_records shows the last 10 of 64 trading days."
+  },
+  "HD|5d": {
+   "ticker": "HD",
+   "period": "5d",
+   "num_points_total": 5,
+   "summary": {
+    "first_close": 293.20001220703125,
+    "last_close": 282.4599914550781,
+    "period_high": 297.1400146484375,
+    "period_low": 277.1499938964844,
+    "pct_change": -3.66
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 5d period; recent_records shows the last 5 of 5 trading days."
+  },
+  "HD|5y": {
+   "ticker": "HD",
+   "period": "5y",
+   "num_points_total": 1254,
+   "summary": {
+    "first_close": 326.4700012207031,
+    "last_close": 282.4599914550781,
+    "period_high": 439.3699951171875,
+    "period_low": 264.510009765625,
+    "pct_change": -13.48
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 298.67999267578125,
+     "high": 302.25,
+     "low": 298.25,
+     "close": 299.9800109863281,
+     "volume": 8191600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 301.0,
+     "high": 301.739990234375,
+     "low": 295.3900146484375,
+     "close": 297.20001220703125,
+     "volume": 5434300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 302.0899963378906,
+     "high": 306.30999755859375,
+     "low": 300.17999267578125,
+     "close": 305.3500061035156,
+     "volume": 5456100
+    },
+    {
+     "date": "2026-09-23",
+     "open": 303.42999267578125,
+     "high": 304.1300048828125,
+     "low": 296.6700134277344,
+     "close": 296.7200012207031,
+     "volume": 4684900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 296.0,
+     "high": 299.1000061035156,
+     "low": 291.07000732421875,
+     "close": 292.17999267578125,
+     "volume": 7053800
+    },
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 5y period; recent_records shows the last 10 of 1254 trading days."
+  },
+  "HD|6mo": {
+   "ticker": "HD",
+   "period": "6mo",
+   "num_points_total": 126,
+   "summary": {
+    "first_close": 321.6300048828125,
+    "last_close": 282.4599914550781,
+    "period_high": 358.8500061035156,
+    "period_low": 277.1499938964844,
+    "pct_change": -12.18
+   },
+   "recent_records": [
+    {
+     "date": "2026-09-18",
+     "open": 298.67999267578125,
+     "high": 302.25,
+     "low": 298.25,
+     "close": 299.9800109863281,
+     "volume": 8191600
+    },
+    {
+     "date": "2026-09-21",
+     "open": 301.0,
+     "high": 301.739990234375,
+     "low": 295.3900146484375,
+     "close": 297.20001220703125,
+     "volume": 5434300
+    },
+    {
+     "date": "2026-09-22",
+     "open": 302.0899963378906,
+     "high": 306.30999755859375,
+     "low": 300.17999267578125,
+     "close": 305.3500061035156,
+     "volume": 5456100
+    },
+    {
+     "date": "2026-09-23",
+     "open": 303.42999267578125,
+     "high": 304.1300048828125,
+     "low": 296.6700134277344,
+     "close": 296.7200012207031,
+     "volume": 4684900
+    },
+    {
+     "date": "2026-09-24",
+     "open": 296.0,
+     "high": 299.1000061035156,
+     "low": 291.07000732421875,
+     "close": 292.17999267578125,
+     "volume": 7053800
+    },
+    {
+     "date": "2026-09-25",
+     "open": 292.69000244140625,
+     "high": 297.1400146484375,
+     "low": 291.3999938964844,
+     "close": 293.20001220703125,
+     "volume": 5968600
+    },
+    {
+     "date": "2026-09-28",
+     "open": 290.2699890136719,
+     "high": 293.9100036621094,
+     "low": 289.30999755859375,
+     "close": 289.8900146484375,
+     "volume": 5415600
+    },
+    {
+     "date": "2026-09-29",
+     "open": 290.9100036621094,
+     "high": 291.8299865722656,
+     "low": 287.3399963378906,
+     "close": 288.0400085449219,
+     "volume": 6009200
+    },
+    {
+     "date": "2026-09-30",
+     "open": 290.3999938964844,
+     "high": 290.5400085449219,
+     "low": 284.010009765625,
+     "close": 284.489990234375,
+     "volume": 5766600
+    },
+    {
+     "date": "2026-10-01",
+     "open": 283.1099853515625,
+     "high": 283.8500061035156,
+     "low": 277.1499938964844,
+     "close": 282.4599914550781,
+     "volume": 7776600
+    }
+   ],
+   "note": "Summary covers the full 6mo period; recent_records shows the last 10 of 126 trading days."
   }
  },
  "info": {
@@ -12843,6 +19623,63 @@
   "WMT": {
    "company_name": "Walmart Inc.",
    "trailing_pe": 37.8
+  },
+  "ORCL": {
+   "company_name": "Oracle Corporation",
+   "trailing_pe": 21.64
+  },
+  "PEP": {
+   "company_name": "Pepsico, Inc.",
+   "trailing_pe": 16.61
+  },
+  "MCD": {
+   "company_name": "McDonald's Corporation",
+   "trailing_pe": 18.76
+  },
+  "NKE": {
+   "company_name": "Nike, Inc.",
+   "trailing_pe": 16.5
+  },
+  "INTC": {
+   "company_name": "Intel Corporation",
+   "trailing_pe": null
+  },
+  "CSCO": {
+   "company_name": "Cisco Systems, Inc.",
+   "trailing_pe": 32.37
+  },
+  "PFE": {
+   "company_name": "Pfizer, Inc.",
+   "trailing_pe": 37.0
+  },
+  "XOM": {
+   "company_name": "ExxonMobil Holdings Corporation",
+   "trailing_pe": 21.11
+  },
+  "BAC": {
+   "company_name": "Bank of America Corporation",
+   "trailing_pe": 12.41
+  },
+  "HD": {
+   "company_name": "Home Depot, Inc. (The)",
+   "trailing_pe": 19.89
   }
- }
+ },
+ "added": [
+  {
+   "recorded_at": "2026-10-02T02:40:57+00:00",
+   "tickers": [
+    "ORCL",
+    "PEP",
+    "MCD",
+    "NKE",
+    "INTC",
+    "CSCO",
+    "PFE",
+    "XOM",
+    "BAC",
+    "HD"
+   ]
+  }
+ ]
 }

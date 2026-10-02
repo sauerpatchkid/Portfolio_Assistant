@@ -15,6 +15,7 @@ os.environ.setdefault("PORTFOLIO_DB", str(RESULTS_DIR / "eval_portfolio.db"))
 os.environ.setdefault("MARKET_SNAPSHOT", str(ROOT / "data" / "market_snapshot.json"))
 
 QUESTIONS_PATH = ROOT / "eval" / "questions.jsonl"
+HOLDOUT_PATH = ROOT / "eval" / "holdout.jsonl"
 TRACE_PATH = ROOT / "bench" / "trace.jsonl"
 
 

@@ -53,18 +53,39 @@ def record(tickers, pause_s=0.5):
     return snapshot, problems
 
 
+SECTIONS = ["get_stock_price", "get_option_chain", "get_stock_news", "get_historical_data", "info"]
+
+
+def add_tickers(path, tickers):
+    """Record extra tickers into an existing snapshot without touching what is already there."""
+    with open(path, encoding="utf-8") as f:
+        snapshot = json.load(f)
+
+    new = [t for t in tickers if t not in snapshot["get_stock_price"]]
+    addition, problems = record(new)
+    for section in SECTIONS:
+        snapshot[section].update(addition[section])
+    snapshot.setdefault("added", []).append({"recorded_at": addition["recorded_at"], "tickers": new})
+    return snapshot, problems
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default="data/market_snapshot.json")
+    parser.add_argument("--add", nargs="+", metavar="TICKER",
+                        help="Add these tickers to the existing snapshot instead of re-recording it")
     args = parser.parse_args()
 
-    snapshot, problems = record(HELD_TICKERS + OTHER_TICKERS)
+    if args.add:
+        snapshot, problems = add_tickers(args.out, args.add)
+    else:
+        snapshot, problems = record(HELD_TICKERS + OTHER_TICKERS)
 
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=1)
 
     print(f"\nSaved {args.out}")
-    for section in ["get_stock_price", "get_option_chain", "get_stock_news", "get_historical_data", "info"]:
+    for section in SECTIONS:
         print(f"  {section}: {len(snapshot[section])} entries")
     if problems:
         print(f"\n{len(problems)} lookups failed and were left out:")

@@ -67,6 +67,7 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=8000)
     args = parser.parse_args()
 
-    Handler.oracle = OracleBackend(offline.load_jsonl(offline.QUESTIONS_PATH))
+    Handler.oracle = OracleBackend(offline.load_jsonl(offline.QUESTIONS_PATH)
+                                   + offline.load_jsonl(offline.HOLDOUT_PATH))
     print(f"Fake server on http://localhost:{args.port}/v1")
     ThreadingHTTPServer(("localhost", args.port), Handler).serve_forever()

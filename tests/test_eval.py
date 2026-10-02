@@ -6,6 +6,7 @@ from agent.prompts import get_agent_config
 from agent.backends import ChatTurn
 from bench.build_trace import build_conversation
 from eval.build_questions import build_all
+from eval.build_holdout import build_all as build_holdout
 from eval.run_eval import run_suite
 
 from tests.fakes import OracleBackend, SilentBackend
@@ -63,6 +64,22 @@ def test_impatient_model_cannot_trade_before_confirmation():
 
     v2 = run(ImpatientBackend(), questions, concurrency=1, version="v2")[0]
     assert v2["confirm_ok"] and v2["state_ok"] and v2["correct"]
+
+
+def test_holdout_matches_its_builder_and_shares_no_question_with_the_main_suite():
+    holdout = build_holdout()
+    assert offline.load_jsonl(offline.HOLDOUT_PATH) == holdout
+    assert len(holdout) == 40
+    main_texts = {q["turns"][0] for q in build_all()}
+    assert not main_texts & {q["turns"][0] for q in holdout}
+
+
+def test_perfect_model_scores_100_on_holdout_with_both_agent_versions():
+    holdout = build_holdout()
+    for version, propose in [("v1", False), ("v2", True)]:
+        records = run(OracleBackend(holdout, propose_trades=propose), holdout, concurrency=8, version=version)
+        wrong = [(r["id"], r["missing"], r["error"]) for r in records if not r["correct"]]
+        assert wrong == [], version
 
 
 def test_useless_model_scores_zero():

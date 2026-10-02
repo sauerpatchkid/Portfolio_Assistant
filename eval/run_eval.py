@@ -6,6 +6,7 @@
 #
 # Read-only questions run concurrently (--concurrency). Trade questions change
 # the database, so they run one at a time with a database reset before each.
+# --suite holdout runs the 40 held-out questions instead of the main 100.
 #
 # Outputs:
 #   results/<name>/records.jsonl   one line per question (answer, tools, score, timings)
@@ -181,6 +182,8 @@ def parse_args():
     parser.add_argument("--model", required=True)
     parser.add_argument("--quantized", action="store_true", help="hf backend: load in 4-bit")
     parser.add_argument("--prompt", default="v1", help="Agent version from agent/prompts.py")
+    parser.add_argument("--suite", choices=["main", "holdout"], default="main",
+                        help="main = the 100-question suite; holdout = 40 questions written after agent v2")
     parser.add_argument("--split", choices=["all", "dev", "test"], default="all")
     parser.add_argument("--concurrency", type=int, default=1)
     parser.add_argument("--max-tokens", type=int, default=512)
@@ -191,9 +194,13 @@ def parse_args():
 def main():
     args = parse_args()
 
-    questions = offline.load_jsonl(offline.QUESTIONS_PATH)
-    if args.split != "all":
-        questions = [q for q in questions if q["split"] == args.split]
+    if args.suite == "holdout":
+        questions = offline.load_jsonl(offline.HOLDOUT_PATH)
+        args.split = "holdout"
+    else:
+        questions = offline.load_jsonl(offline.QUESTIONS_PATH)
+        if args.split != "all":
+            questions = [q for q in questions if q["split"] == args.split]
     if args.limit:
         questions = questions[:args.limit]
 

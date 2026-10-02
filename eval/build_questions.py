@@ -401,42 +401,44 @@ def build_trades():
          ["insufficient", "not enough", "exceed"]),
     ]
 
-    questions = []
-    for request, trade, refusal_keywords in cases:
-        ticker = trade["ticker"]
+    return [build_trade(request, trade, refusal_keywords) for request, trade, refusal_keywords in cases]
 
-        # Ground truth: run the trade for real on a fresh database and read the result.
-        reset_database()
-        result = execute_trade(**trade)
-        holding = get_holding_by_ticker(ticker)
-        state = {
-            "cash": cash(),
-            "holdings": {ticker: 0 if "error" in holding else holding["shares"]},
-        }
-        reset_database()
 
-        should_execute = refusal_keywords is None
-        assert ("error" not in result) == should_execute, f"Unexpected trade result for: {request}"
+def build_trade(request, trade, refusal_keywords, confirm_message=CONFIRM_MESSAGE):
+    """One two-turn trade question. refusal_keywords is None for a trade that should go through."""
+    ticker = trade["ticker"]
 
-        verb = trade["action"].lower()
-        questions.append({
-            "category": "trade",
-            "min_tool_calls": 1,
-            "turns": [request, CONFIRM_MESSAGE],
-            "expected_tools": [["execute_trade"]] if should_execute else [],
-            "forbidden_tools": [],
-            "expect_no_tools": False,
-            "numbers": [],
-            "contains": refusal_keywords or [],
-            "contains_match": "any",
-            "state": state,
-            "oracle": [
-                {"calls": [call("get_stock_price", ticker=ticker)],
-                 "reply": f"I will {verb} {trade['shares']} shares of {ticker}. Do you want me to proceed?"},
-                {"calls": [call("execute_trade", **trade)], "reply": None},
-            ],
-        })
-    return questions
+    # Ground truth: run the trade for real on a fresh database and read the result.
+    reset_database()
+    result = execute_trade(**trade)
+    holding = get_holding_by_ticker(ticker)
+    state = {
+        "cash": cash(),
+        "holdings": {ticker: 0 if "error" in holding else holding["shares"]},
+    }
+    reset_database()
+
+    should_execute = refusal_keywords is None
+    assert ("error" not in result) == should_execute, f"Unexpected trade result for: {request}"
+
+    verb = trade["action"].lower()
+    return {
+        "category": "trade",
+        "min_tool_calls": 1,
+        "turns": [request, confirm_message],
+        "expected_tools": [["execute_trade"]] if should_execute else [],
+        "forbidden_tools": [],
+        "expect_no_tools": False,
+        "numbers": [],
+        "contains": refusal_keywords or [],
+        "contains_match": "any",
+        "state": state,
+        "oracle": [
+            {"calls": [call("get_stock_price", ticker=ticker)],
+             "reply": f"I will {verb} {trade['shares']} shares of {ticker}. Do you want me to proceed?"},
+            {"calls": [call("execute_trade", **trade)], "reply": None},
+        ],
+    }
 
 
 def build_all():

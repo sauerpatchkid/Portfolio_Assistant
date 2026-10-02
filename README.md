@@ -130,6 +130,11 @@ charts from them.
 | Qwen3-8B, the 84 multi-step questions | 39 | 75 |
 | Qwen3-8B, the 12 trades | 4 | 11 |
 | Qwen3-0.6B, all 100 questions | 16 | 19 |
+| **Qwen3-8B, 40 held-out questions** | **19 (48%)** | **28 (70%)** |
+| Held-out: known skills, reworded (16) | 4 | 11 |
+| Held-out: new question types (16) | 9 | 11 |
+| Held-out: trades (6) | 4 | 4 |
+| Qwen3-0.6B, 40 held-out questions | 7 | 8 |
 
 ![Correct answers by question type](results/figures/accuracy_by_category.png)
 
@@ -141,8 +146,18 @@ charts from them.
   shares) and answers that skip one of two things asked for.
 - **Model size matters more than the prompt.** The 0.6B model rarely chains two
   tool calls, and the v2 changes barely help it.
-- v2 was written after reading v1 failures from across the whole suite, so 90
-  is not a held-out score.
+- **The held-out check.** v2 was written after reading v1 failures from across
+  the main suite, so 90 is not a clean score. On 40 questions written after v2
+  was finished, v2 scored 70% against v1's 48%. The improvement is real but
+  smaller than on the main suite (22 points rather than 36), so part of the 90
+  is v2 fitting the questions it was written from. Most of the held-out gain
+  is on known skills asked in new words; on question types v2 had never seen,
+  it barely moved.
+- **Held-out failures worth fixing next.** v2 passed "nearest" as an option
+  expiration date and gave up when the tool rejected it, ran out of tool-call
+  rounds twice, and once copied fields from the trade preview back into the
+  trade call, which the tool rejected. v2 has been left as it was, so the
+  held-out set stays held out.
 
 ### Latency
 

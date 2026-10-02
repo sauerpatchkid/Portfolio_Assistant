@@ -31,10 +31,23 @@ def write_jsonl(path, rows):
 
 
 def append_csv_row(path, row: dict):
-    """Add one row to a summary CSV, writing the header if the file is new."""
-    is_new = not Path(path).exists()
-    with open(path, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(row))
-        if is_new:
-            writer.writeheader()
-        writer.writerow(row)
+    """
+    Add one row to a summary CSV. The file is rewritten with the union of the
+    existing columns and the row's columns, so a row whose columns differ from
+    the header (an older file, a newer script) still lines up.
+    """
+    rows = []
+    columns = []
+    if Path(path).exists():
+        with open(path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            columns = list(reader.fieldnames or [])
+            rows = list(reader)
+
+    columns += [c for c in row if c not in columns]
+    rows.append(row)
+
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=columns)
+        writer.writeheader()
+        writer.writerows(rows)

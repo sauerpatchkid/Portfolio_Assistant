@@ -1,0 +1,10 @@
+{"target": "history_compare-06", "phase": "cold", "ttft_s": 10.7905, "prompt_tokens": 4400, "cached_tokens": 0}
+{"target": "history_compare-06", "phase": "warm", "ttft_s": 0.1208, "prompt_tokens": 4400, "cached_tokens": 4384}
+{"target": "history_compare-06", "phase": "revisit", "ttft_s": 10.6744, "prompt_tokens": 4400, "cached_tokens": 0}
+{"target": "history_compare-07", "phase": "cold", "ttft_s": 10.6572, "prompt_tokens": 4401, "cached_tokens": 0}
+{"target": "history_compare-07", "phase": "warm", "ttft_s": 0.0653, "prompt_tokens": 4401, "cached_tokens": 4400}
+{"target": "history_compare-07", "phase": "revisit", "ttft_s": 10.6798, "prompt_tokens": 4401, "cached_tokens": 0}
+{"target": "history_compare-05", "phase": "cold", "ttft_s": 10.544, "prompt_tokens": 4374, "cached_tokens": 0}
+{"target": "history_compare-05", "phase": "warm", "ttft_s": 0.0887, "prompt_tokens": 4374, "cached_tokens": 4368}
+{"target": "history_compare-05", "phase": "revisit", "ttft_s": 10.524, "prompt_tokens": 4374, "cached_tokens": 0}
+{"target": "history_compare-06", "phase": "late_revisit", "ttft_s": 10.7501, "prompt_tokens": 4400, "cached_tokens": 0}

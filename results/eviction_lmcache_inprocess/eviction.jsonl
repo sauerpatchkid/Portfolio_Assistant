@@ -1,0 +1,10 @@
+{"target": "history_compare-06", "phase": "cold", "ttft_s": 10.7276, "prompt_tokens": 4401, "cached_tokens": 0}
+{"target": "history_compare-06", "phase": "warm", "ttft_s": 0.094, "prompt_tokens": 4401, "cached_tokens": 4400}
+{"target": "history_compare-06", "phase": "revisit", "ttft_s": 0.7743, "prompt_tokens": 4401, "cached_tokens": 4352}
+{"target": "history_compare-07", "phase": "cold", "ttft_s": 10.6729, "prompt_tokens": 4400, "cached_tokens": 0}
+{"target": "history_compare-07", "phase": "warm", "ttft_s": 0.1272, "prompt_tokens": 4400, "cached_tokens": 4384}
+{"target": "history_compare-07", "phase": "revisit", "ttft_s": 0.4164, "prompt_tokens": 4400, "cached_tokens": 4352}
+{"target": "history_compare-05", "phase": "cold", "ttft_s": 10.4994, "prompt_tokens": 4374, "cached_tokens": 0}
+{"target": "history_compare-05", "phase": "warm", "ttft_s": 0.0937, "prompt_tokens": 4374, "cached_tokens": 4368}
+{"target": "history_compare-05", "phase": "revisit", "ttft_s": 0.319, "prompt_tokens": 4374, "cached_tokens": 4352}
+{"target": "history_compare-06", "phase": "late_revisit", "ttft_s": 3.0198, "prompt_tokens": 4401, "cached_tokens": 4352}

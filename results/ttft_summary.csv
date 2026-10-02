@@ -1,0 +1,6 @@
+name,model,requests,ttft_median_s,ttft_p95_s,first_step_median_s,later_steps_median_s,mean_prompt_tokens,cached_token_pct
+ttft_sglang,Qwen/Qwen3-8B-AWQ,310,0.3795,1.5136,0.321,0.427,2199,0.0
+ttft_no_cache,Qwen/Qwen3-8B-AWQ,310,2.6301,6.0142,2.2283,2.8475,2069,0.0
+ttft_prefix_cache,Qwen/Qwen3-8B-AWQ,310,0.3246,3.4228,0.1077,0.3904,2069,87.2
+ttft_lmcache,Qwen/Qwen3-8B-AWQ,310,0.3415,5.1914,0.1246,0.5282,2069,87.2
+ttft_lmcache_only,Qwen/Qwen3-8B-AWQ,310,0.5105,4.1779,0.3196,0.7562,2069,82.1

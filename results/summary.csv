@@ -1,0 +1,14 @@
+name,backend,model,prompt,split,concurrency,questions,correct,accuracy_pct,multi_step_questions,multi_step_correct,errors,wall_s,read_only_wall_s,trade_wall_s,model_calls,prompt_tokens,cached_tokens,completion_tokens,completion_tokens_per_s,dev_correct,test_correct
+eval_vllm_8b_v1_c16,openai,Qwen/Qwen3-8B-AWQ,v1,all,16,100,49,49.0,84,34,0,339.3,261.5,77.9,204,390067,335440,17274,50.9,,
+eval_vllm_8b_v1_c1,openai,Qwen/Qwen3-8B-AWQ,v1,all,1,100,49,49.0,84,34,0,718.6,640.8,77.9,203,388195,334752,17301,24.1,,
+eval_vllm_8b_v1_c4,openai,Qwen/Qwen3-8B-AWQ,v1,all,4,100,49,49.0,84,34,0,411.8,334.0,77.8,203,388195,334752,17282,42.0,,
+eval_vllm_8b_v1_c8,openai,Qwen/Qwen3-8B-AWQ,v1,all,8,100,49,49.0,84,34,0,363.1,285.2,77.9,204,390575,337072,17406,47.9,,
+eval_vllm_8b_v1_c32,openai,Qwen/Qwen3-8B-AWQ,v1,all,32,100,49,49.0,84,34,0,328.2,250.5,77.8,203,387517,334768,17375,52.9,,
+eval_vllm_0.6b_v1_c16,openai,Qwen/Qwen3-0.6B,v1,all,16,100,16,16.0,84,5,0,62.9,49.1,13.8,148,259224,239728,7914,125.8,,
+eval_sglang_8b_v1_c16,openai,Qwen/Qwen3-8B-AWQ,v1,all,16,100,41,41.0,84,26,0,720.1,226.4,493.8,208,415734,0,17174,23.8,,
+eval_sglang_8b_v1_c1,openai,Qwen/Qwen3-8B-AWQ,v1,all,1,100,42,42.0,84,27,0,2821.9,2327.9,494.0,208,415734,0,17193,6.1,,
+eval_hf_8b_v1,hf,Qwen/Qwen3-8B,v1,all,1,100,45,45.0,84,30,0,2392.2,2072.9,319.3,203,388483,0,17452,7.3,,
+agent_v1_8b,openai,Qwen/Qwen3-8B-AWQ,v1,all,16,100,54,54.0,84,39,0,349.9,267.3,82.6,203,388270,333120,17455,49.9,28,26
+agent_v2_8b,openai,Qwen/Qwen3-8B-AWQ,v2,all,16,100,90,90.0,84,75,0,659.9,549.6,110.3,254,684388,567168,17606,26.7,48,42
+agent_v1_0.6b,openai,Qwen/Qwen3-0.6B,v1,all,16,100,16,16.0,84,5,0,63.2,49.1,14.1,147,257346,238080,7836,123.9,10,6
+agent_v2_0.6b,openai,Qwen/Qwen3-0.6B,v2,all,16,100,19,19.0,84,8,0,115.0,92.1,22.9,175,413565,368480,9299,80.9,11,8

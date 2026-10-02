@@ -85,8 +85,8 @@ Three choices keep the suite repeatable:
   snapshot of the tool outputs for 18 tickers (`data/market_snapshot.json`).
 - **Computed answers.** `eval/build_questions.py` works out every expected
   number by calling the same tool functions the agent uses.
-- **Dev and test halves.** Questions alternate between two halves inside every
-  category, so prompt changes can be tuned on one and checked on the other.
+- **Two halves.** Questions alternate between two halves inside every category,
+  and every run reports each half, so a gain can be checked on both.
 
 ## Latency
 
@@ -110,12 +110,108 @@ Time-to-first-token is measured by replaying a fixed trace
 (`bench/trace.jsonl`): the 100 eval conversations with the ideal tool calls
 already made, so every setup is timed on exactly the same prompts.
 
+## Results
+
+Measured on one free Colab T4 GPU with Qwen3-8B (4-bit) unless noted. The raw
+records and summaries are in `results/`; `scripts/make_figures.py` draws the
+charts from them.
+
+### Answer quality
+
+| Correct completions | v1 | v2 |
+|---|---|---|
+| Qwen3-8B, all 100 questions | 54 | 90 |
+| Qwen3-8B, first half / second half | 28 / 26 | 48 / 42 |
+| Qwen3-8B, the 84 multi-step questions | 39 | 75 |
+| Qwen3-8B, the 12 trades | 4 | 11 |
+| Qwen3-0.6B, all 100 questions | 16 | 19 |
+
+![Correct answers by question type](results/figures/accuracy_by_category.png)
+
+- **What v1 got wrong.** It executed 7 of the 12 trades without waiting for
+  confirmation, even though its prompt said to wait. On several question types
+  it announced a lookup and stopped, picked a tool that could not answer, or
+  made up a P/E ratio.
+- **What v2 still gets wrong.** Mostly arithmetic slips (180 instead of 179
+  shares) and answers that skip one of two things asked for.
+- **Model size matters more than the prompt.** The 0.6B model rarely chains two
+  tool calls, and the v2 changes barely help it.
+- v2 was written after reading v1 failures from across the whole suite, so 90
+  is not a held-out score.
+
+### Latency
+
+**Full pass of the eval suite** (agent v1):
+
+| Setup | Full pass | Speed-up |
+|---|---|---|
+| In-notebook generation, one request at a time | 39.9 min | 1.0x |
+| Model server (vLLM), one request at a time | 12.0 min | 3.3x |
+| Model server (vLLM), 32 concurrent requests | 5.5 min | 7.3x |
+
+![Time for one full pass of the eval suite](results/figures/full_pass_time.png)
+
+Most of the gain comes from the serving engine itself; concurrency adds another
+2.2x on top. The 12 trades always run one at a time and cost a fixed 78
+seconds, which caps what concurrency can do; the read-only questions alone go
+from 10.7 to 4.2 minutes (2.6x). The in-notebook baseline uses a different 4-bit
+format (bitsandbytes rather than AWQ), so this compares two whole setups, not
+one setting.
+
+**Time to first token**, replaying the fixed trace of 310 requests:
+
+| Setup | Median | First step of a turn | Later steps |
+|---|---|---|---|
+| KV-cache reuse off | 2.63 s | 2.23 s | 2.85 s |
+| vLLM prefix caching (GPU memory) | 0.32 s | 0.11 s | 0.39 s |
+| vLLM + LMCache | 0.34 s | 0.12 s | 0.53 s |
+| LMCache only (CPU RAM) | 0.51 s | 0.32 s | 0.76 s |
+
+![Time to first token](results/figures/time_to_first_token.png)
+
+Reusing the KV cache of the shared system prompt and tool schemas cuts the
+median time to first token about 8x. While a prefix is still in GPU memory,
+adding LMCache gains nothing and costs a little; on its own, serving the same
+prefixes from CPU RAM, it is still 5x faster than recomputing.
+
+**Coming back to a conversation after its cache was evicted.** A 4,400-token
+conversation is sent, pushed out of GPU memory by unrelated prompts, and sent
+again:
+
+| Time to first token | vLLM alone | vLLM + LMCache |
+|---|---|---|
+| First visit | 10.66 s | 10.54 s |
+| Repeat, still in GPU memory | 0.09 s | 0.10 s |
+| Revisit after eviction from GPU memory | 10.67 s | 0.46 s (loaded from CPU RAM) |
+| Revisit after eviction from CPU RAM as well | 10.75 s | 3.13 s (loaded from disk) |
+
+![Returning to a conversation after eviction](results/figures/eviction.png)
+
+This is where the extra cache tiers pay off. The conversation's KV cache is
+0.6 GB. Loading it back from RAM takes milliseconds; loading it from Colab's
+disk takes about 2.7 seconds (roughly 0.2 GB/s), which is nearly all of the
+3.13 s. On this setup the time to first token after a disk hit is set by
+storage read speed. The disk row is a single measurement per setup; LMCache
+running inside the vLLM process gave 3.02 s.
+
+To make eviction happen in a short test, the GPU KV cache was capped at 2 GB
+(about 14,500 tokens) in every time-to-first-token and eviction run.
+
+**Alternative backend.** SGLang ran the same suite with no code change.
+Handling one request at a time it generated about 6 tokens/s against vLLM's 24,
+and its log warns that this 4-bit format is not optimized there. With 16
+concurrent requests its read-only pass took 3.8 minutes against vLLM's 4.4. It
+also reuses prefixes automatically (median time to first token 0.38 s). Its
+tool-call formatting differs slightly, and with agent v1 it scored 41 where
+vLLM scored 49 under the scorer used for those two runs.
+
 ## Repository layout
 
 | Folder | Contents |
 |---|---|
 | `agent/` | Database, market data, tools, trade guardrails, agent loop, prompts, model backends |
 | `eval/` | Question builder, the 100 questions, scorer, runner |
+| `results/` | Raw records, summaries and figures from the runs below |
 | `bench/` | Fixed trace, time-to-first-token and KV-cache benchmarks |
 | `serving/` | Launch scripts for the model servers |
 | `notebooks/` | Colab notebooks that run each experiment on a T4 GPU |
@@ -148,13 +244,11 @@ Tests, no GPU needed:
 python -m pytest
 ```
 
-## Results
-
-Not measured yet. This section will be filled in from the Colab runs.
-
 ## Limitations
 
 - One T4 GPU and one quantized model; timings will not transfer to other hardware.
+- Each timing is a single run. The eval is deterministic (same answers at every
+  concurrency), but wall-clock times on a shared Colab GPU vary between sessions.
 - Scoring is keyword- and number-based, so it can miss a correct answer phrased
   unusually, or accept a wrong one that happens to contain the right number.
 - The benchmark trace uses ideal tool calls, not a model's own.

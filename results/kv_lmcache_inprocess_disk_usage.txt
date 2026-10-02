@@ -1,0 +1,1 @@
+6.0G	/content/lmcache_disk

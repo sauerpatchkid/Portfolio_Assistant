@@ -1,0 +1,4 @@
+name,model,targets,target_prompt_tokens,filler_tokens_between_visits,cold_median_s,warm_median_s,revisit_median_s,late_revisit_s
+eviction_prefix_cache,Qwen/Qwen3-8B-AWQ,3,4400,15291,10.6572,0.0887,10.6744,10.7501
+eviction_lmcache,Qwen/Qwen3-8B-AWQ,3,4395,15285,10.5422,0.1038,0.4592,3.1325
+eviction_lmcache_inprocess,Qwen/Qwen3-8B-AWQ,3,4401,15292,10.6729,0.094,0.4164,3.0198

@@ -1,6 +1,6 @@
 # --- Agent Versions ---
 # v1 is the system prompt and tool descriptions from the original course notebook.
-# v2 was written after reading the v1 failures in the eval suite (dev half):
+# v2 was written after reading the v1 failures in the eval suite:
 #   - trades were executed without waiting for confirmation
 #   - the model announced "let me look that up" and stopped without calling a tool
 #   - it picked a tool that could not answer (today's change for a 3-month question)
